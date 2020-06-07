@@ -1,0 +1,1668 @@
+<?xml version="1.0" encoding="gb2312" ?>
+<Skin Version="1">
+	<Info>
+		<PlayArea y="0" h="452" />
+		<ScoreNumberPos x="236" y="573" />
+		<ComboNumberPos x="112" />
+		<Title	title="DJ Max (Beta)"/>
+	</Info>
+	<Styles>
+		<StyleSet stylesetID="1" name="键位">
+			<Style styleID="0" name="5键" />
+			<Style styleID="1" name="7键A" />
+			<Style styleID="2" name="7键B" />
+		</StyleSet>	
+	</Styles>
+
+	<Component>
+		<Panel PartCount="8" FixedPos="true" ID="0">
+			<part0 FrameCount="1" Draw_SrcBlend="true" Draw_AlphaTest="true">
+				<Frame0 alpha = "1.0" u="90" v="226" w="1" h="1" x="20" y="0" destw="224" desth="474" ImageName="pgmk2_1.png" />
+			</part0>
+			<part0 FrameCount="1" Draw_SrcBlend="true" Draw_AlphaTest="true">
+				<Frame0 u="0" v="0" w="234" h="126" x="0" y="474" ImageName="pgmk2_1.png" />
+			</part0>
+			<part1 FrameCount="1" Draw_SrcBlend="true" Draw_AlphaTest="true">
+				<Frame0 u="1" v="129" w="46" h="126" x="234" y="474" ImageName="pgmk2_1.png" />
+			</part1>
+			<part2 FrameCount="1" Draw_SrcBlend="true" Draw_AlphaTest="true">
+				<Frame0 u="50" v="129" w="30" h="126" desth="150" x="244" y="324" ImageName="pgmk2_1.png" />
+			</part2>
+			<part3 FrameCount="1" Draw_SrcBlend="true" Draw_AlphaTest="true">
+				<Frame0 u="114" v="130" w="4" h="125" x="244" y="0" desth="250" ImageName="pgmk2_1.png" />
+			</part3>
+			<part4 FrameCount="1" Draw_SrcBlend="true" Draw_AlphaTest="true">
+				<Frame0 u="82" v="129" w="30" h="126" x="244" y="198" ImageName="pgmk2_1.png" />
+			</part4>
+			<part5 FrameCount="1" Draw_SrcBlend="true" Draw_AlphaTest="true">
+				<Frame0 u="125" v="130" w="6" h="24" x="14" y="0" desth="474" ImageName="pgmk2_1.png" />
+			</part5>
+			<!-- 5Key up !-->
+			<part FrameCount="1" styleID="0" stylesetID="1">
+				<Frame u="1" v="1" w="225" h="37" x="19" y="474" ImageName="panel_1.png"/>
+			</part>
+			<part FrameCount="1" styleID="1" stylesetID="1">
+				<Frame u="1" v="78" w="225" h="37" x="19" y="474" ImageName="panel_1.png"/>
+			</part>
+			<part FrameCount="1" styleID="2" stylesetID="1">
+				<Frame u="1" v="40" w="225" h="37" x="19" y="474" ImageName="panel_1.png"/>
+			</part>
+			<part FrameCount="1" Draw_SrcBlend = "true" >
+				<Frame u="mod(CurSpeedLvl,4) * 64" v="div(CurSpeedLvl,4)*64" w="64" h="64" x="300" y="530" ImageName="speed.png"/>
+			</part>		
+			
+
+											
+		</Panel>
+		
+		<ManiaResultPanel PartCount="1" ID="13">
+			<part FrameCount="1" Draw_SrcBlend = "true">
+				<Frame u="1" v="1" w="232" h="67" x="370" y="525" ImageName="result.png" alpha="0.7"/>
+			</part>			
+			<part FrameCount="1" Draw_SrcBlend = "true"><!-- hitrate 个位数!-->
+				<Frame u="getdigit(HitRate,0)*12" v="243" w="11" h="12" x="509" y="565" ImageName="result.png" alpha="0.7"/>
+			</part>				
+			<part FrameCount="1" Draw_SrcBlend = "true"><!-- hitrate 十位数!-->
+				<Frame u="getdigit(HitRate,1)*12" v="243" w="11" h="12" x="498" y="565" ImageName="result.png" alpha="0.7"/>
+			</part>				
+			<part FrameCount="1" Draw_SrcBlend = "true"><!-- hitrate 百位数!-->
+				<Frame u="getdigit(HitRate,2)*12" v="243" w="11" h="12" x="487" y="565" ImageName="result.png" alpha="0.7"/>
+			</part>				
+			<part FrameCount="1" Draw_SrcBlend = "true"><!-- hitrate 小数!-->
+				<Frame u="getdigit(HitRate,-1)*12" v="243" w="11" h="12" x="524" y="565" ImageName="result.png" alpha="0.7"/>
+			</part>					
+	
+			<part_maxcount FrameCount="1" Draw_SrcBlend = "true">
+				<Frame u="getdigit(MAXCount,0)*12" v="243" w="11" h="12" x="415" y="565" ImageName="result.png" alpha="0.7"/>
+			</part_maxcount>				
+			<part_maxcount FrameCount="1" Draw_SrcBlend = "true">
+				<Frame u="getdigit(MAXCount,1)*12" v="243" w="11" h="12" x="404" y="565" ImageName="result.png" alpha="0.7"/>
+			</part_maxcount>		
+			<part_maxcount FrameCount="1" Draw_SrcBlend = "true">
+				<Frame u="getdigit(MAXCount,2)*12" v="243" w="11" h="12" x="393" y="565" ImageName="result.png" alpha="0.7"/>
+			</part_maxcount>				
+			<part_maxcount FrameCount="1" Draw_SrcBlend = "true">
+				<Frame u="getdigit(MAXCount,3)*12" v="243" w="11" h="12" x="382" y="565" ImageName="result.png" alpha="0.7"/>
+			</part_maxcount>	
+			
+			<part_MISSCOUNT FrameCount="1" Draw_SrcBlend = "true">
+				<Frame u="getdigit(MissCount,0)*12" v="243" w="11" h="12" x="468" y="565" ImageName="result.png" alpha="0.7"/>
+			</part_MISSCOUNT>				
+			<part_MISSCOUNT FrameCount="1" Draw_SrcBlend = "true">
+				<Frame u="getdigit(MissCount,1)*12" v="243" w="11" h="12" x="457" y="565" ImageName="result.png" alpha="0.7"/>
+			</part_MISSCOUNT>		
+			<part_MISSCOUNT FrameCount="1" Draw_SrcBlend = "true">
+				<Frame u="getdigit(MissCount,2)*12" v="243" w="11" h="12" x="446" y="565" ImageName="result.png" alpha="0.7"/>
+			</part_MISSCOUNT>				
+			<part_MISSCOUNT FrameCount="1" Draw_SrcBlend = "true">
+				<Frame u="getdigit(MissCount,3)*12" v="243" w="11" h="12" x="435" y="565" ImageName="result.png" alpha="0.7"/>
+			</part_MISSCOUNT>
+			
+			<part_MAXCOMBO FrameCount="1" Draw_SrcBlend = "true">
+				<Frame u="getdigit(MaxCombo,0)*12" v="243" w="11" h="12" x="576" y="565" ImageName="result.png" alpha="0.7"/>
+			</part_MAXCOMBO>				
+			<part_MAXCOMBO FrameCount="1" Draw_SrcBlend = "true">
+				<Frame u="getdigit(MaxCombo,1)*12" v="243" w="11" h="12" x="565" y="565" ImageName="result.png" alpha="0.7"/>
+			</part_MAXCOMBO>		
+			<part_MAXCOMBO FrameCount="1" Draw_SrcBlend = "true">
+				<Frame u="getdigit(MaxCombo,2)*12" v="243" w="11" h="12" x="554" y="565" ImageName="result.png" alpha="0.7"/>
+			</part_MAXCOMBO>				
+			<part_MAXCOMBO FrameCount="1" Draw_SrcBlend = "true">
+				<Frame u="getdigit(MaxCombo,3)*12" v="243" w="11" h="12" x="543" y="565" ImageName="result.png" alpha="0.7"/>
+			</part_MAXCOMBO>	
+		</ManiaResultPanel >		
+		
+		
+		<O2JamResultPanel PartCount="1" ID="14">
+			
+			
+			<part FrameCount="1" Draw_SrcBlend = "true">
+				<Frame u="1" v="86" w="225" h="67" x="370" y="525" ImageName="result.png" alpha="0.7"/>
+			</part>			
+			<part FrameCount="1" Draw_SrcBlend = "true">
+				<Frame u="1" v="159" w="64" h="67" x="595" y="525" ImageName="result.png" alpha="0.7"/>
+			</part>			
+			
+			<part_COOLCOUNT FrameCount="1" Draw_SrcBlend = "true">
+				<Frame u="getdigit(CoolCount,0)*12" v="243" w="11" h="12" x="415" y="565" ImageName="result.png" alpha="0.7"/>
+			</part_COOLCOUNT>				
+			<part_COOLCOUNT FrameCount="1" Draw_SrcBlend = "true">
+				<Frame u="getdigit(CoolCount,1)*12" v="243" w="11" h="12" x="404" y="565" ImageName="result.png" alpha="0.7"/>
+			</part_COOLCOUNT>		
+			<part_COOLCOUNT FrameCount="1" Draw_SrcBlend = "true">
+				<Frame u="getdigit(CoolCount,2)*12" v="243" w="11" h="12" x="393" y="565" ImageName="result.png" alpha="0.7"/>
+			</part_COOLCOUNT>				
+			<part_COOLCOUNT FrameCount="1" Draw_SrcBlend = "true">
+				<Frame u="getdigit(CoolCount,3)*12" v="243" w="11" h="12" x="382" y="565" ImageName="result.png" alpha="0.7"/>
+			</part_COOLCOUNT>	
+			
+			<part_GOODCOUNT FrameCount="1" Draw_SrcBlend = "true">
+				<Frame u="getdigit(GoodCount,0)*12" v="243" w="11" h="12" x="468" y="565" ImageName="result.png" alpha="0.7"/>
+			</part_GOODCOUNT>				
+			<part_GOODCOUNT FrameCount="1" Draw_SrcBlend = "true">
+				<Frame u="getdigit(GoodCount,1)*12" v="243" w="11" h="12" x="457" y="565" ImageName="result.png" alpha="0.7"/>
+			</part_GOODCOUNT>		
+			<part_GOODCOUNT FrameCount="1" Draw_SrcBlend = "true">
+				<Frame u="getdigit(GoodCount,2)*12" v="243" w="11" h="12" x="446" y="565" ImageName="result.png" alpha="0.7"/>
+			</part_GOODCOUNT>				
+			<part_GOODCOUNT FrameCount="1" Draw_SrcBlend = "true">
+				<Frame u="getdigit(GoodCount,3)*12" v="243" w="11" h="12" x="435" y="565" ImageName="result.png" alpha="0.7"/>
+			</part_GOODCOUNT>
+			
+			<part_BADCOUNT FrameCount="1" Draw_SrcBlend = "true">
+				<Frame u="getdigit(BadCount,0)*12" v="243" w="11" h="12" x="522" y="565" ImageName="result.png" alpha="0.7"/>
+			</part_BADCOUNT>				
+			<part_BADCOUNT FrameCount="1" Draw_SrcBlend = "true">
+				<Frame u="getdigit(BadCount,1)*12" v="243" w="11" h="12" x="511" y="565" ImageName="result.png" alpha="0.7"/>
+			</part_BADCOUNT>		
+			<part_BADCOUNT FrameCount="1" Draw_SrcBlend = "true">
+				<Frame u="getdigit(BadCount,2)*12" v="243" w="11" h="12" x="500" y="565" ImageName="result.png" alpha="0.7"/>
+			</part_BADCOUNT>				
+			<part_BADCOUNT FrameCount="1" Draw_SrcBlend = "true">
+				<Frame u="getdigit(BadCount,3)*12" v="243" w="11" h="12" x="489" y="565" ImageName="result.png" alpha="0.7"/>
+			</part_BADCOUNT>			
+								
+			<part_MISSCOUNT FrameCount="1" Draw_SrcBlend = "true">
+				<Frame u="getdigit(MissCount,0)*12" v="243" w="11" h="12" x="576" y="565" ImageName="result.png" alpha="0.7"/>
+			</part_MISSCOUNT>				
+			<part_MISSCOUNT FrameCount="1" Draw_SrcBlend = "true">
+				<Frame u="getdigit(MissCount,1)*12" v="243" w="11" h="12" x="565" y="565" ImageName="result.png" alpha="0.7"/>
+			</part_MISSCOUNT>		
+			<part_MISSCOUNT FrameCount="1" Draw_SrcBlend = "true">
+				<Frame u="getdigit(MissCount,2)*12" v="243" w="11" h="12" x="554" y="565" ImageName="result.png" alpha="0.7"/>
+			</part_MISSCOUNT>				
+			<part_MISSCOUNT FrameCount="1" Draw_SrcBlend = "true">
+				<Frame u="getdigit(MissCount,3)*12" v="243" w="11" h="12" x="543" y="565" ImageName="result.png" alpha="0.7"/>
+			</part_MISSCOUNT>
+					
+		
+			<part_MAXCOMBO FrameCount="1" Draw_SrcBlend = "true">
+				<Frame u="getdigit(MaxCombo,0)*12" v="243" w="11" h="12" x="631" y="565" ImageName="result.png" alpha="0.7"/>
+			</part_MAXCOMBO>				
+			<part_MAXCOMBO FrameCount="1" Draw_SrcBlend = "true">
+				<Frame u="getdigit(MaxCombo,1)*12" v="243" w="11" h="12" x="620" y="565" ImageName="result.png" alpha="0.7"/>
+			</part_MAXCOMBO>		
+			<part_MAXCOMBO FrameCount="1" Draw_SrcBlend = "true">
+				<Frame u="getdigit(MaxCombo,2)*12" v="243" w="11" h="12" x="609" y="565" ImageName="result.png" alpha="0.7"/>
+			</part_MAXCOMBO>				
+			<part_MAXCOMBO FrameCount="1" Draw_SrcBlend = "true">
+				<Frame u="getdigit(MaxCombo,3)*12" v="243" w="11" h="12" x="598" y="565" ImageName="result.png" alpha="0.7"/>
+			</part_MAXCOMBO>
+		</O2JamResultPanel >	
+				
+		<ComboText PartCount="1" ID="9">
+			<Part0 FrameCount="24" Draw_SrcBlend="true" FrameSpeed="33.3" KeyFraming="true">
+				<Frame0 u="2" v="183" w="159" h="27" x="132" y="90" destw="248" desth="54" orgx="124" orgy="27"
+					ImageName="combo.png" keyframeid="0" />
+				<Frame0 u="2" v="183" w="159" h="27" x="132" y="90" destw="124" desth="27" orgx="62" orgy="13"
+					ImageName="combo.png" keyframeid="4" />
+				<Frame0 u="2" v="183" w="159" h="27" x="132" y="90" destw="124" desth="27" orgx="62" orgy="13"
+					ImageName="combo.png" keyframeid="23" />
+			</Part0>
+		</ComboText>
+						
+				<!-- 7key A type !-->
+		<KeyDown1 PartCount="1"  ID="50"  styleID="1" stylesetID="1">
+			<Part0l FrameCount="1">
+				<Frame1 u="1" v="40" w="6" h="37" x="19" y="474" ImageName="pgmk2_2.png" />
+			</Part0>
+			<Part0 FrameCount="1">
+				<Frame1 u="9" v="40" w="6" h="37" x="25" y="474" destw="26" ImageName="pgmk2_2.png" />
+			</Part0>
+			<Part0 FrameCount="1">
+				<Frame1 u="17" v="40" w="6" h="37" x="51" y="474" ImageName="pgmk2_2.png" />
+			</Part0>
+		</KeyDown1>
+
+		<KeyDown1 PartCount="1"  ID="51"  styleID="1" stylesetID="1">
+			<Part0l FrameCount="1">
+				<Frame1 u="1" v="40" w="6" h="37" x="57" y="474" ImageName="pgmk2_2.png" />
+			</Part0>
+			<Part0 FrameCount="1">
+				<Frame1 u="9" v="40" w="6" h="37" x="63" y="474" destw="18" ImageName="pgmk2_2.png" />
+			</Part0>
+			<Part0 FrameCount="1">
+				<Frame1 u="17" v="40" w="6" h="37" x="81" y="474" ImageName="pgmk2_2.png" />
+			</Part0>
+		</KeyDown1>		
+		
+		<KeyDown1 PartCount="1"  ID="52"  styleID="1" stylesetID="1">
+			<Part0l FrameCount="1">
+				<Frame1 u="169" v="40" w="6" h="37" x="87" y="474" ImageName="pgmk2_2.png" />
+			</Part0>
+			<Part0 FrameCount="1">
+				<Frame1 u="177" v="40" w="6" h="37" x="93" y="474" destw="18" ImageName="pgmk2_2.png" />
+			</Part0>
+			<Part0 FrameCount="1">
+				<Frame1 u="185" v="40" w="6" h="37" x="111" y="474" ImageName="pgmk2_2.png" />
+			</Part0>
+		</KeyDown1>	
+		
+		<KeyDown1 PartCount="1"  ID="53"  styleID="1" stylesetID="1">
+			<Part0l FrameCount="1">
+				<Frame1 u="1" v="40" w="6" h="37" x="117" y="474" ImageName="pgmk2_2.png" />
+			</Part0>
+			<Part0 FrameCount="1">
+				<Frame1 u="9" v="40" w="6" h="37" x="123" y="474" destw="18" ImageName="pgmk2_2.png" />
+			</Part0>
+			<Part0 FrameCount="1">
+				<Frame1 u="17" v="40" w="6" h="37" x="141" y="474" ImageName="pgmk2_2.png" />
+			</Part0>
+		</KeyDown1>		
+		
+		<KeyDown1 PartCount="1"  ID="54"  styleID="1" stylesetID="1">
+			<Part0l FrameCount="1">
+				<Frame1 u="169" v="40" w="6" h="37" x="147" y="474" ImageName="pgmk2_2.png" />
+			</Part0>
+			<Part0 FrameCount="1">
+				<Frame1 u="177" v="40" w="6" h="37" x="153" y="474" destw="18" ImageName="pgmk2_2.png" />
+			</Part0>
+			<Part0 FrameCount="1">
+				<Frame1 u="185" v="40" w="6" h="37" x="171" y="474" ImageName="pgmk2_2.png" />
+			</Part0>
+		</KeyDown1>	
+
+		<KeyDown1 PartCount="1"  ID="55"  styleID="1" stylesetID="1">
+			<Part0l FrameCount="1">
+				<Frame1 u="1" v="40" w="6" h="37" x="177" y="474" ImageName="pgmk2_2.png" />
+			</Part0>
+			<Part0 FrameCount="1">
+				<Frame1 u="9" v="40" w="6" h="37" x="183" y="474" destw="18" ImageName="pgmk2_2.png" />
+			</Part0>
+			<Part0 FrameCount="1">
+				<Frame1 u="17" v="40" w="6" h="37" x="201" y="474" ImageName="pgmk2_2.png" />
+			</Part0>
+		</KeyDown1>		
+		
+		<KeyDown1 PartCount="1"  ID="56"  styleID="1" stylesetID="1">
+			<Part0l FrameCount="1">
+				<Frame1 u="1" v="40" w="6" h="37" x="207" y="474" ImageName="pgmk2_2.png" />
+			</Part0>
+			<Part0 FrameCount="1">
+				<Frame1 u="9" v="40" w="6" h="37" x="213" y="474" destw="26" ImageName="pgmk2_2.png" />
+			</Part0>
+			<Part0 FrameCount="1">
+				<Frame1 u="17" v="40" w="6" h="37" x="239" y="474" ImageName="pgmk2_2.png" />
+			</Part0>
+		</KeyDown1>	
+		
+		<!--7Key B type!-->		
+		
+		<KeyDown1 PartCount="1"  ID="50"  styleID="2" stylesetID="1">
+			<Part0l FrameCount="1">
+				<Frame1 u="1" v="40" w="6" h="37" x="19" y="474" ImageName="pgmk2_2.png" />
+			</Part0>
+			<Part0 FrameCount="1">
+				<Frame1 u="9" v="40" w="6" h="37" x="25" y="474" destw="18" ImageName="pgmk2_2.png" />
+			</Part0>
+			<Part0 FrameCount="1">
+				<Frame1 u="17" v="40" w="6" h="37" x="43" y="474" ImageName="pgmk2_2.png" />
+			</Part0>
+		</KeyDown1>						
+
+		<KeyDown1 PartCount="1"  ID="51"  styleID="2" stylesetID="1">
+			<Part0l FrameCount="1">
+				<Frame1 u="169" v="40" w="6" h="37" x="49" y="474" ImageName="pgmk2_2.png" />
+			</Part0>
+			<Part0 FrameCount="1">
+				<Frame1 u="177" v="40" w="6" h="37" x="55" y="474" destw="18" ImageName="pgmk2_2.png" />
+			</Part0>
+			<Part0 FrameCount="1">
+				<Frame1 u="185" v="40" w="6" h="37" x="73" y="474" ImageName="pgmk2_2.png" />
+			</Part0>
+		</KeyDown1>	
+	
+		<KeyDown1 PartCount="1"  ID="52"  styleID="2" stylesetID="1">
+			<Part0l FrameCount="1">
+				<Frame1 u="1" v="40" w="6" h="37" x="79" y="474" ImageName="pgmk2_2.png" />
+			</Part0>
+			<Part0 FrameCount="1">
+				<Frame1 u="9" v="40" w="6" h="37" x="85" y="474" destw="18" ImageName="pgmk2_2.png" />
+			</Part0>
+			<Part0 FrameCount="1">
+				<Frame1 u="17" v="40" w="6" h="37" x="103" y="474" ImageName="pgmk2_2.png" />
+			</Part0>
+		</KeyDown1>		
+		
+		<KeyDown1 PartCount="1"  ID="53"  styleID="2" stylesetID="1">
+			<Part0l FrameCount="1">
+				<Frame1 u="1" v="40" w="6" h="37" x="109" y="474" ImageName="pgmk2_2.png" />
+			</Part0>
+			<Part0 FrameCount="1">
+				<Frame1 u="9" v="40" w="6" h="37" x="115" y="474" destw="33" ImageName="pgmk2_2.png" />
+			</Part0>
+			<Part0 FrameCount="1">
+				<Frame1 u="17" v="40" w="6" h="37" x="148" y="474" ImageName="pgmk2_2.png" />
+			</Part0>
+		</KeyDown1>	
+
+		<KeyDown1 PartCount="1"  ID="54"  styleID="2" stylesetID="1">
+			<Part0l FrameCount="1">
+				<Frame1 u="1" v="40" w="6" h="37" x="154" y="474" ImageName="pgmk2_2.png" />
+			</Part0>
+			<Part0 FrameCount="1">
+				<Frame1 u="9" v="40" w="6" h="37" x="160" y="474" destw="18" ImageName="pgmk2_2.png" />
+			</Part0>
+			<Part0 FrameCount="1">
+				<Frame1 u="17" v="40" w="6" h="37" x="178" y="474" ImageName="pgmk2_2.png" />
+			</Part0>
+		</KeyDown1>		
+		
+		<KeyDown1 PartCount="1"  ID="55"  styleID="2" stylesetID="1">
+			<Part0l FrameCount="1">
+				<Frame1 u="169" v="40" w="6" h="37" x="184" y="474" ImageName="pgmk2_2.png" />
+			</Part0>
+			<Part0 FrameCount="1">
+				<Frame1 u="177" v="40" w="6" h="37" x="190" y="474" destw="18" ImageName="pgmk2_2.png" />
+			</Part0>
+			<Part0 FrameCount="1">
+				<Frame1 u="185" v="40" w="6" h="37" x="208" y="474" ImageName="pgmk2_2.png" />
+			</Part0>
+		</KeyDown1>	
+		
+		<KeyDown1 PartCount="1"  ID="56"  styleID="2" stylesetID="1">
+			<Part0l FrameCount="1">
+				<Frame1 u="1" v="40" w="6" h="37" x="214" y="474" ImageName="pgmk2_2.png" />
+			</Part0>
+			<Part0 FrameCount="1">
+				<Frame1 u="9" v="40" w="6" h="37" x="220" y="474" destw="18" ImageName="pgmk2_2.png" />
+			</Part0>
+			<Part0 FrameCount="1">
+				<Frame1 u="17" v="40" w="6" h="37" x="238" y="474" ImageName="pgmk2_2.png" />
+			</Part0>
+		</KeyDown1>		
+		
+		<!--5Key !-->												
+				
+		<KeyDown2 PartCount="1" FixedPos="true" ID="51"  styleID="0" stylesetID="1">
+			<Part0l FrameCount="1">
+				<Frame1 u="1" v="40" w="6" h="37" x="19" y="474" ImageName="pgmk2_2.png" />
+			</Part0>
+			<Part0 FrameCount="1">
+					<Frame1 u="9" v="40" w="6" h="37" x="25" y="474" destw="33" ImageName="pgmk2_2.png" />
+			</Part0>
+			<Part0 FrameCount="1">
+					<Frame1 u="17" v="40" w="6" h="37" x="58" y="474" ImageName="pgmk2_2.png" />
+			</Part0>
+		</KeyDown2>
+		<KeyDown3 PartCount="1" FixedPos="true" ID="52"  styleID="0" stylesetID="1">
+			<Part0 FrameCount="1">
+				<Frame1 u="169" v="40" w="6" h="37" x="64" y="474" ImageName="pgmk2_2.png" />
+			</Part0>
+			<Part0 FrameCount="1">
+				<Frame1 u="177" v="40" w="6" h="37" x="70" y="474" destw="33" ImageName="pgmk2_2.png" />
+			</Part0>
+			<Part0 FrameCount="1">
+				<Frame1 u="185" v="40" w="6" h="37" x="103" y="474" ImageName="pgmk2_2.png" />
+			</Part0>
+		</KeyDown3>
+		<KeyDown4 PartCount="1" FixedPos="true" ID="53"  styleID="0" stylesetID="1">
+			<Part0 FrameCount="1">
+				<Frame1 u="1" v="40" w="6" h="37" x="109" y="474" ImageName="pgmk2_2.png" />
+			</Part0>
+			<Part0 FrameCount="1">
+				<Frame1 u="9" v="40" w="6" h="37" x="115" y="474" destw="33" ImageName="pgmk2_2.png" />
+			</Part0>
+			<Part0 FrameCount="1">
+				<Frame1 u="17" v="40" w="6" h="37" x="148" y="474" ImageName="pgmk2_2.png" />
+			</Part0>
+		</KeyDown4>
+		<KeyDown5 PartCount="1" FixedPos="true" ID="54"  styleID="0" stylesetID="1">
+			<Part0 FrameCount="1">
+				<Frame1 u="169" v="40" w="6" h="37" x="154" y="474" ImageName="pgmk2_2.png" />
+			</Part0>
+			<Part0 FrameCount="1">
+				<Frame1 u="177" v="40" w="6" h="37" x="160" y="474" destw="33" ImageName="pgmk2_2.png" />
+			</Part0>
+			<Part0 FrameCount="1">
+				<Frame1 u="185" v="40" w="6" h="37" x="193" y="474" ImageName="pgmk2_2.png" />
+			</Part0>
+		</KeyDown5>
+		<KeyDown6 PartCount="1" FixedPos="true" ID="55"  styleID="0" stylesetID="1">
+			<Part0 FrameCount="1">
+				<Frame1 u="1" v="40" w="6" h="37" x="199" y="474" ImageName="pgmk2_2.png" />
+			</Part0>
+			<Part0 FrameCount="1">
+				<Frame1 u="9" v="40" w="6" h="37" x="205" y="474" destw="33" ImageName="pgmk2_2.png" />
+			</Part0>
+			<Part0 FrameCount="1">
+				<Frame1 u="17" v="40" w="6" h="37" x="238" y="474" ImageName="pgmk2_2.png" />
+			</Part0>
+		</KeyDown6>
+		<Note1 PartCount="1" ID="100">
+			<Part FrameCount="6" FrameSpeed="12" EnableClip="true" clipLeft="0" clipRight="800" clipTop="0"	clipBottom="473" styleID="1" stylesetID="1">
+				<Frame0 u="2" v="17" w="30"   h="7" x="20" orgy="9" y="CurNoteY1" desth="10" destw="37" ImageName="Note0000.png" />
+				<Frame0 u="34" v="17" w="30"  h="7" x="20" orgy="9" y="CurNoteY1" desth="10" destw="37" ImageName="Note0000.png" />
+				<Frame0 u="66" v="17" w="30"  h="7" x="20" orgy="9" y="CurNoteY1" desth="10" destw="37" ImageName="Note0000.png" />
+				<Frame0 u="98" v="17" w="30"  h="7" x="20" orgy="9" y="CurNoteY1" desth="10" destw="37" ImageName="Note0000.png" />
+				<Frame0 u="130" v="17" w="30" h="7" x="20" orgy="9" y="CurNoteY1" desth="10" destw="37" ImageName="Note0000.png" />
+				<Frame0 u="162" v="17" w="30" h="7" x="20" orgy="9" y="CurNoteY1" desth="10" destw="37" ImageName="Note0000.png" />
+			</Part>	
+		<Part FrameCount="6" FrameSpeed="12" EnableClip="true" clipLeft="0" clipRight="800" clipTop="0"	clipBottom="473" styleID="2" stylesetID="1">
+			<Frame0 u="2"  v="1" w="20" h="5" x="20" orgy="6" y="CurNoteY1" desth="7" destw="30" ImageName="Note0000.png" />
+			<Frame0 u="24" v="1" w="20" h="5" x="20" orgy="6" y="CurNoteY1" desth="7" destw="30" ImageName="Note0000.png" />
+			<Frame0 u="46" v="1" w="20" h="5" x="20" orgy="6" y="CurNoteY1" desth="7" destw="30" ImageName="Note0000.png" />
+			<Frame0 u="68" v="1" w="20" h="5" x="20" orgy="6" y="CurNoteY1" desth="7" destw="30" ImageName="Note0000.png" />
+			<Frame0 u="90" v="1" w="20" h="5" x="20" orgy="6" y="CurNoteY1" desth="7" destw="30" ImageName="Note0000.png" />
+			<Frame0 u="112" v="1" w="20" h="5" x="20" orgy="6" y="CurNoteY1" desth="7" destw="30" ImageName="Note0000.png" />
+		</Part>
+				
+		</Note1>
+		<Note2 PartCount="1" ID="101">
+			<Part0 FrameCount="6" FrameSpeed="12" EnableClip="true" clipLeft="0" clipRight="800" clipTop="0"
+				clipBottom="473" styleID="0" stylesetID="1">
+				<Frame0 u="2" v="1" w="20" h="5" x="20" orgy="9" y="CurNoteY2" desth="10" destw="45" ImageName="Note0000.png" />
+				<Frame0 u="24" v="1" w="20" h="5" x="20" orgy="9" y="CurNoteY2" desth="10" destw="45" ImageName="Note0000.png" />
+				<Frame0 u="46" v="1" w="20" h="5" x="20" orgy="9" y="CurNoteY2" desth="10" destw="45" ImageName="Note0000.png" />
+				<Frame0 u="68" v="1" w="20" h="5" x="20" orgy="9" y="CurNoteY2" desth="10" destw="45" ImageName="Note0000.png" />
+				<Frame0 u="90" v="1" w="20" h="5" x="20" orgy="9" y="CurNoteY2" desth="10" destw="45" ImageName="Note0000.png" />
+				<Frame0 u="112" v="1" w="20" h="5" x="20" orgy="9" y="CurNoteY2" desth="10" destw="45" ImageName="Note0000.png" />
+			</Part0>			
+<Part FrameCount="6" FrameSpeed="12" EnableClip="true" clipLeft="0" clipRight="800" clipTop="0"	clipBottom="473" styleID="1" stylesetID="1">
+<Frame0 u="2"  v="1" w="20" h="5" x="57" orgy="6" y="CurNoteY2" desth="7" destw="30" ImageName="Note0000.png" />
+<Frame0 u="24" v="1" w="20" h="5" x="57" orgy="6" y="CurNoteY2" desth="7" destw="30" ImageName="Note0000.png" />
+<Frame0 u="46" v="1" w="20" h="5" x="57" orgy="6" y="CurNoteY2" desth="7" destw="30" ImageName="Note0000.png" />
+<Frame0 u="68" v="1" w="20" h="5" x="57" orgy="6" y="CurNoteY2" desth="7" destw="30" ImageName="Note0000.png" />
+<Frame0 u="90" v="1" w="20" h="5" x="57" orgy="6" y="CurNoteY2" desth="7" destw="30" ImageName="Note0000.png" />
+<Frame0 u="112" v="1" w="20" h="5" x="57" orgy="6" y="CurNoteY2" desth="7" destw="30" ImageName="Note0000.png" />
+</Part>			
+		<Part FrameCount="6" FrameSpeed="12" EnableClip="true" clipLeft="0" clipRight="800" clipTop="0"	clipBottom="473" styleID="2" stylesetID="1">
+			<Frame0 u="2" v="9" w="18" h="5" x="50" orgy="6" y="CurNoteY2" desth="7" destw="30" ImageName="Note0000.png" />
+			<Frame0 u="22" v="9" w="18" h="5" x="50" orgy="6" y="CurNoteY2" desth="7" destw="30" ImageName="Note0000.png" />
+			<Frame0 u="42" v="9" w="18" h="5" x="50" orgy="6" y="CurNoteY2" desth="7" destw="30" ImageName="Note0000.png" />
+			<Frame0 u="62" v="9" w="18" h="5" x="50" orgy="6" y="CurNoteY2" desth="7" destw="30" ImageName="Note0000.png" />
+			<Frame0 u="82" v="9" w="18" h="5" x="50" orgy="6" y="CurNoteY2" desth="7" destw="30" ImageName="Note0000.png" />
+			<Frame0 u="102" v="9" w="18" h="5" x="50" orgy="6" y="CurNoteY2" desth="7" destw="30" ImageName="Note0000.png" />
+		</Part>
+
+		</Note2>
+		<Note3 PartCount="1" ID="102">
+			<Part0 FrameCount="6" FrameSpeed="12" EnableClip="true" clipLeft="0" clipRight="800" clipTop="0"
+				clipBottom="473"styleID="0" stylesetID="1">
+				<Frame0 u="2" v="9" w="18" h="5" x="65" orgy="9" y="CurNoteY3" desth="10" destw="45" ImageName="Note0000.png" />
+				<Frame0 u="22" v="9" w="18" h="5" x="65" orgy="9" y="CurNoteY3" desth="10" destw="45" ImageName="Note0000.png" />
+				<Frame0 u="42" v="9" w="18" h="5" x="65" orgy="9" y="CurNoteY3" desth="10" destw="45" ImageName="Note0000.png" />
+				<Frame0 u="62" v="9" w="18" h="5" x="65" orgy="9" y="CurNoteY3" desth="10" destw="45" ImageName="Note0000.png" />
+				<Frame0 u="82" v="9" w="18" h="5" x="65" orgy="9" y="CurNoteY3" desth="10" destw="45" ImageName="Note0000.png" />
+				<Frame0 u="102" v="9" w="18" h="5" x="65" orgy="9" y="CurNoteY3" desth="10" destw="45" ImageName="Note0000.png" />
+			</Part0>
+			<Part FrameCount="6" FrameSpeed="12" EnableClip="true" clipLeft="0" clipRight="800" clipTop="0"	clipBottom="473" styleID="1" stylesetID="1">
+				<Frame0 u="2"  v="9" w="18" h="5" x="87" orgy="6" y="CurNoteY3" desth="7" destw="30" ImageName="Note0000.png" />
+				<Frame0 u="22" v="9" w="18" h="5" x="87" orgy="6" y="CurNoteY3" desth="7" destw="30" ImageName="Note0000.png" />
+				<Frame0 u="42" v="9" w="18" h="5" x="87" orgy="6" y="CurNoteY3" desth="7" destw="30" ImageName="Note0000.png" />
+				<Frame0 u="62" v="9" w="18" h="5" x="87" orgy="6" y="CurNoteY3" desth="7" destw="30" ImageName="Note0000.png" />
+				<Frame0 u="82" v="9" w="18" h="5" x="87" orgy="6" y="CurNoteY3" desth="7" destw="30" ImageName="Note0000.png" />
+				<Frame0 u="102" v="9" w="18" h="5" x="87" orgy="6" y="CurNoteY3" desth="7" destw="30" ImageName="Note0000.png" />
+			</Part>
+		<Part FrameCount="6" FrameSpeed="12" EnableClip="true" clipLeft="0" clipRight="800" clipTop="0"	clipBottom="473" styleID="2" stylesetID="1">
+			<Frame0 u="2"  v="1" w="20" h="5" x="80" orgy="6" y="CurNoteY3" desth="7" destw="30" ImageName="Note0000.png" />
+			<Frame0 u="24" v="1" w="20" h="5" x="80" orgy="6" y="CurNoteY3" desth="7" destw="30" ImageName="Note0000.png" />
+			<Frame0 u="46" v="1" w="20" h="5" x="80" orgy="6" y="CurNoteY3" desth="7" destw="30" ImageName="Note0000.png" />
+			<Frame0 u="68" v="1" w="20" h="5" x="80" orgy="6" y="CurNoteY3" desth="7" destw="30" ImageName="Note0000.png" />
+			<Frame0 u="90" v="1" w="20" h="5" x="80" orgy="6" y="CurNoteY3" desth="7" destw="30" ImageName="Note0000.png" />
+			<Frame0 u="112" v="1" w="20" h="5" x="80" orgy="6" y="CurNoteY3" desth="7" destw="30" ImageName="Note0000.png" />
+		</Part>
+
+		</Note3>
+		<Note4 PartCount="1" ID="103">
+			<Part0 FrameCount="6" FrameSpeed="12" EnableClip="true" clipLeft="0" clipRight="800" clipTop="0"
+				clipBottom="473"styleID="0" stylesetID="1">
+				<Frame0 u="2" v="1" w="20" h="5" x="110" y="CurNoteY4" orgy="9" desth="10" destw="45" ImageName="Note0000.png" />
+				<Frame0 u="24" v="1" w="20" h="5" x="110" y="CurNoteY4" orgy="9" desth="10" destw="45" ImageName="Note0000.png" />
+				<Frame0 u="46" v="1" w="20" h="5" x="110" y="CurNoteY4" orgy="9" desth="10" destw="45" ImageName="Note0000.png" />
+				<Frame0 u="68" v="1" w="20" h="5" x="110" y="CurNoteY4" orgy="9" desth="10" destw="45" ImageName="Note0000.png" />
+				<Frame0 u="90" v="1" w="20" h="5" x="110" y="CurNoteY4" orgy="9" desth="10" destw="45" ImageName="Note0000.png" />
+				<Frame0 u="112" v="1" w="20" h="5" x="110" y="CurNoteY4" orgy="9" desth="10" destw="45"
+					ImageName="Note0000.png" />
+			</Part0>
+			<Part FrameCount="6" FrameSpeed="12" EnableClip="true" clipLeft="0" clipRight="800" clipTop="0"	clipBottom="473" styleID="1" stylesetID="1">
+				<Frame0 u="2" v="1" w="20" h="5" x="117" orgy="6" y="CurNoteY4" desth="7" destw="30" ImageName="Note0000.png" />
+				<Frame0 u="24" v="1" w="20" h="5" x="117" orgy="6" y="CurNoteY4" desth="7" destw="30" ImageName="Note0000.png" />
+				<Frame0 u="46" v="1" w="20" h="5" x="117" orgy="6" y="CurNoteY4" desth="7" destw="30" ImageName="Note0000.png" />
+				<Frame0 u="68" v="1" w="20" h="5" x="117" orgy="6" y="CurNoteY4" desth="7" destw="30" ImageName="Note0000.png" />
+				<Frame0 u="90" v="1" w="20" h="5" x="117" orgy="6" y="CurNoteY4" desth="7" destw="30" ImageName="Note0000.png" />
+				<Frame0 u="112" v="1" w="20" h="5" x="117" orgy="6" y="CurNoteY4" desth="7" destw="30" ImageName="Note0000.png" />
+			</Part>		
+			<Part FrameCount="6" FrameSpeed="12" EnableClip="true" clipLeft="0" clipRight="800" clipTop="0"	clipBottom="473" styleID="2" stylesetID="1">
+				<Frame0 u="2" v="17" w="30" h="7" x="110" orgy="9" y="CurNoteY4" desth="10" destw="45" ImageName="Note0000.png" />
+				<Frame0 u="34" v="17" w="30" h="7" x="110" orgy="9" y="CurNoteY4" desth="10" destw="45" ImageName="Note0000.png" />
+				<Frame0 u="66" v="17" w="30" h="7" x="110" orgy="9" y="CurNoteY4" desth="10" destw="45" ImageName="Note0000.png" />
+				<Frame0 u="98" v="17" w="30" h="7" x="110" orgy="9" y="CurNoteY4" desth="10" destw="45" ImageName="Note0000.png" />
+				<Frame0 u="130" v="17" w="30" h="7" x="110" orgy="9" y="CurNoteY4" desth="10" destw="45" ImageName="Note0000.png" />
+				<Frame0 u="162" v="17" w="30" h="7" x="110" orgy="9" y="CurNoteY4" desth="10" destw="45" ImageName="Note0000.png" />
+			</Part>
+		</Note4>
+		<Note5 PartCount="1" ID="104">
+			<Part0 FrameCount="6" FrameSpeed="12" EnableClip="true" clipLeft="0" clipRight="800" clipTop="0"
+				clipBottom="473"styleID="0" stylesetID="1">
+				<Frame0 u="2" v="9" w="18" h="5" x="155" y="CurNoteY5" orgy="9" desth="10" destw="45" ImageName="Note0000.png" />
+				<Frame0 u="22" v="9" w="18" h="5" x="155" y="CurNoteY5" orgy="9" desth="10" destw="45" ImageName="Note0000.png" />
+				<Frame0 u="42" v="9" w="18" h="5" x="155" y="CurNoteY5" orgy="9" desth="10" destw="45" ImageName="Note0000.png" />
+				<Frame0 u="62" v="9" w="18" h="5" x="155" y="CurNoteY5" orgy="9" desth="10" destw="45" ImageName="Note0000.png" />
+				<Frame0 u="82" v="9" w="18" h="5" x="155" y="CurNoteY5" orgy="9" desth="10" destw="45" ImageName="Note0000.png" />
+				<Frame0 u="102" v="9" w="18" h="5" x="155" y="CurNoteY5" orgy="9" desth="10" destw="45"	ImageName="Note0000.png" />
+			</Part0>
+			<Part FrameCount="6" FrameSpeed="12" EnableClip="true" clipLeft="0" clipRight="800" clipTop="0"	clipBottom="473" styleID="1" stylesetID="1">
+				<Frame0 u="2" v="9" w="18" h="5" x="147" orgy="6" y="CurNoteY5" desth="7" destw="30" ImageName="Note0000.png" />
+				<Frame0 u="22" v="9" w="18" h="5" x="147" orgy="6" y="CurNoteY5" desth="7" destw="30" ImageName="Note0000.png" />
+				<Frame0 u="42" v="9" w="18" h="5" x="147" orgy="6" y="CurNoteY5" desth="7" destw="30" ImageName="Note0000.png" />
+				<Frame0 u="62" v="9" w="18" h="5" x="147" orgy="6" y="CurNoteY5" desth="7" destw="30" ImageName="Note0000.png" />
+				<Frame0 u="82" v="9" w="18" h="5" x="147" orgy="6" y="CurNoteY5" desth="7" destw="30" ImageName="Note0000.png" />
+				<Frame0 u="102" v="9" w="18" h="5" x="147" orgy="6" y="CurNoteY5" desth="7" destw="30" ImageName="Note0000.png" />
+			</Part>
+			<Part FrameCount="6" FrameSpeed="12" EnableClip="true" clipLeft="0" clipRight="800" clipTop="0"	clipBottom="473" styleID="2" stylesetID="1">
+				<Frame0 u="2" v="1" w="20" h="5" x="155" orgy="6" y="CurNoteY5" desth="7" destw="30" ImageName="Note0000.png" />
+				<Frame0 u="24" v="1" w="20" h="5" x="155" orgy="6" y="CurNoteY5" desth="7" destw="30" ImageName="Note0000.png" />
+				<Frame0 u="46" v="1" w="20" h="5" x="155" orgy="6" y="CurNoteY5" desth="7" destw="30" ImageName="Note0000.png" />
+				<Frame0 u="68" v="1" w="20" h="5" x="155" orgy="6" y="CurNoteY5" desth="7" destw="30" ImageName="Note0000.png" />
+				<Frame0 u="90" v="1" w="20" h="5" x="155" orgy="6" y="CurNoteY5" desth="7" destw="30" ImageName="Note0000.png" />
+				<Frame0 u="112" v="1" w="20" h="5" x="155" orgy="6" y="CurNoteY5" desth="7" destw="30" ImageName="Note0000.png" />
+			</Part>
+
+
+		
+		</Note5>
+		<Note6 PartCount="1" ID="105">
+			<Part0 FrameCount="6" FrameSpeed="12" EnableClip="true" clipLeft="0" clipRight="800" clipTop="0"
+				clipBottom="473"styleID="0" stylesetID="1">
+				<Frame0 u="2" v="1" w="20" h="5" x="200" y="CurNoteY6" orgy="9" desth="10" destw="45" ImageName="Note0000.png" />
+				<Frame0 u="24" v="1" w="20" h="5" x="200" y="CurNoteY6" orgy="9" desth="10" destw="45" ImageName="Note0000.png" />
+				<Frame0 u="46" v="1" w="20" h="5" x="200" y="CurNoteY6" orgy="9" desth="10" destw="45" ImageName="Note0000.png" />
+				<Frame0 u="68" v="1" w="20" h="5" x="200" y="CurNoteY6" orgy="9" desth="10" destw="45" ImageName="Note0000.png" />
+				<Frame0 u="90" v="1" w="20" h="5" x="200" y="CurNoteY6" orgy="9" desth="10" destw="45" ImageName="Note0000.png" />
+				<Frame0 u="112" v="1" w="20" h="5" x="200" y="CurNoteY6" orgy="9" desth="10" destw="45"
+					ImageName="Note0000.png" />
+			</Part0>
+<Part FrameCount="6" FrameSpeed="12" EnableClip="true" clipLeft="0" clipRight="800" clipTop="0"	clipBottom="473" styleID="1" stylesetID="1">
+<Frame0 u="2" v="1" w="20" h="5" x="177" orgy="6" y="CurNoteY6" desth="7" destw="30" ImageName="Note0000.png" />
+<Frame0 u="24" v="1" w="20" h="5" x="177" orgy="6" y="CurNoteY6" desth="7" destw="30" ImageName="Note0000.png" />
+<Frame0 u="46" v="1" w="20" h="5" x="177" orgy="6" y="CurNoteY6" desth="7" destw="30" ImageName="Note0000.png" />
+<Frame0 u="68" v="1" w="20" h="5" x="177" orgy="6" y="CurNoteY6" desth="7" destw="30" ImageName="Note0000.png" />
+<Frame0 u="90" v="1" w="20" h="5" x="177" orgy="6" y="CurNoteY6" desth="7" destw="30" ImageName="Note0000.png" />
+<Frame0 u="112" v="1" w="20" h="5" x="177" orgy="6" y="CurNoteY6" desth="7" destw="30" ImageName="Note0000.png" />
+</Part>
+			
+		<Part FrameCount="6" FrameSpeed="12" EnableClip="true" clipLeft="0" clipRight="800" clipTop="0"	clipBottom="473" styleID="2" stylesetID="1">
+			<Frame0 u="2" v="9" w="18" h="5" x="185" orgy="6" y="CurNoteY6" desth="7" destw="30" ImageName="Note0000.png" />
+			<Frame0 u="22" v="9" w="18" h="5" x="185" orgy="6" y="CurNoteY6" desth="7" destw="30" ImageName="Note0000.png" />
+			<Frame0 u="42" v="9" w="18" h="5" x="185" orgy="6" y="CurNoteY6" desth="7" destw="30" ImageName="Note0000.png" />
+			<Frame0 u="62" v="9" w="18" h="5" x="185" orgy="6" y="CurNoteY6" desth="7" destw="30" ImageName="Note0000.png" />
+			<Frame0 u="82" v="9" w="18" h="5" x="185" orgy="6" y="CurNoteY6" desth="7" destw="30" ImageName="Note0000.png" />
+			<Frame0 u="102" v="9" w="18" h="5" x="185" orgy="6" y="CurNoteY6" desth="7" destw="30" ImageName="Note0000.png" />
+		</Part>
+
+
+		
+		</Note6>
+		<Note7 PartCount="1" ID="106">
+<Part FrameCount="6" FrameSpeed="12" EnableClip="true" clipLeft="0" clipRight="800" clipTop="0"	clipBottom="473" styleID="1" stylesetID="1">
+<Frame0 u="2" v="17" w="30" h="7" x="207" orgy="9" y="CurNoteY7" desth="10" destw="37" ImageName="Note0000.png" />
+<Frame0 u="34" v="17" w="30" h="7" x="207" orgy="9" y="CurNoteY7" desth="10" destw="37" ImageName="Note0000.png" />
+<Frame0 u="66" v="17" w="30" h="7" x="207" orgy="9" y="CurNoteY7" desth="10" destw="37" ImageName="Note0000.png" />
+<Frame0 u="98" v="17" w="30" h="7" x="207" orgy="9" y="CurNoteY7" desth="10" destw="37" ImageName="Note0000.png" />
+<Frame0 u="130" v="17" w="30" h="7" x="207" orgy="9" y="CurNoteY7" desth="10" destw="37" ImageName="Note0000.png" />
+<Frame0 u="162" v="17" w="30" h="7" x="207" orgy="9" y="CurNoteY7" desth="10" destw="37" ImageName="Note0000.png" />
+</Part>		
+		<Part FrameCount="6" FrameSpeed="12" EnableClip="true" clipLeft="0" clipRight="800" clipTop="0"	clipBottom="473" styleID="2" stylesetID="1">
+			<Frame0 u="2" v="1" w="20" h="5" x="215" orgy="6" y="CurNoteY7" desth="7" destw="30" ImageName="Note0000.png" />
+			<Frame0 u="24" v="1" w="20" h="5" x="215" orgy="6" y="CurNoteY7" desth="7" destw="30" ImageName="Note0000.png" />
+			<Frame0 u="46" v="1" w="20" h="5" x="215" orgy="6" y="CurNoteY7" desth="7" destw="30" ImageName="Note0000.png" />
+			<Frame0 u="68" v="1" w="20" h="5" x="215" orgy="6" y="CurNoteY7" desth="7" destw="30" ImageName="Note0000.png" />
+			<Frame0 u="90" v="1" w="20" h="5" x="215" orgy="6" y="CurNoteY7" desth="7" destw="30" ImageName="Note0000.png" />
+			<Frame0 u="112" v="1" w="20" h="5" x="215" orgy="6" y="CurNoteY7" desth="7" destw="30" ImageName="Note0000.png" />
+		</Part>
+</Note7>
+		<ChannelActive2 PartCount="1" ID="200" >
+			<Part0 FrameCount="1" Draw_SrcBlend="true" styleID="1" stylesetID="1">
+				<Frame0 alpha="0.6" u="178" v="166" h="84" w="16" x="20" y="0" destw="37" desth="474" ImageName="pgmk2_2.png" />
+			</Part0>
+			<Part0 FrameCount="1" Draw_SrcBlend="true" styleID="2" stylesetID="1">
+				<Frame0 alpha="0.6" u="178" v="166" h="84" w="16" x="20" y="0" destw="29" desth="474" ImageName="pgmk2_2.png" />
+			</Part0>			
+		</ChannelActive2>
+		<ChannelActive2 PartCount="1" ID="201">
+			<Part0 FrameCount="1" Draw_SrcBlend="true" styleID="0" stylesetID="1">
+				<Frame0 alpha="0.6" u="178" v="166" h="84" w="16" x="20" y="0" destw="45" desth="474" ImageName="pgmk2_2.png" />
+			</Part0>
+			<Part0 FrameCount="1" Draw_SrcBlend="true" styleID="1" stylesetID="1">
+				<Frame0 alpha="0.6" u="178" v="166" h="84" w="16" x="57" y="0" destw="30" desth="474" ImageName="pgmk2_2.png" />
+			</Part0>
+			<Part0 FrameCount="1" Draw_SrcBlend="true" styleID="2" stylesetID="1">
+				<Frame0 alpha="0.6" u="126" v="166" h="84" w="16" x="49" y="0" destw="30" desth="474" ImageName="pgmk2_2.png" />
+			</Part0>						
+		</ChannelActive2>
+		<ChannelActive3 PartCount="1" ID="202">
+			<Part0 FrameCount="1" Draw_SrcBlend="true"  styleID="0" stylesetID="1">
+				<Frame0 alpha="0.6" u="126" v="166" h="84" w="16" x="65" y="0" destw="45" desth="474" ImageName="pgmk2_2.png" />
+			</Part0>
+			<Part0 FrameCount="1" Draw_SrcBlend="true" styleID="1" stylesetID="1">
+				<Frame0 alpha="0.6" u="126" v="166" h="84" w="16" x="87" y="0" destw="30" desth="474" ImageName="pgmk2_2.png" />
+			</Part0>
+			<Part0 FrameCount="1" Draw_SrcBlend="true" styleID="2" stylesetID="1">
+				<Frame0 alpha="0.6" u="178" v="166" h="84" w="16" x="79" y="0" destw="30" desth="474" ImageName="pgmk2_2.png" />
+			</Part0>			
+		</ChannelActive3>
+		<ChannelActive4 PartCount="1" ID="203">
+			<Part0 FrameCount="1" Draw_SrcBlend="true"  styleID="0" stylesetID="1">
+				<Frame0 alpha="0.6" u="178" v="166" h="84" w="16" x="110" y="0" destw="45" desth="474" ImageName="pgmk2_2.png" />
+			</Part0>
+			<Part0 FrameCount="1" Draw_SrcBlend="true" styleID="1" stylesetID="1">
+				<Frame0 alpha="0.6" u="178" v="166" h="84" w="16" x="117" y="0" destw="30" desth="474" ImageName="pgmk2_2.png" />
+			</Part0>
+			<Part0 FrameCount="1" Draw_SrcBlend="true" styleID="2" stylesetID="1">
+				<Frame0 alpha="0.6" u="178" v="166" h="84" w="16" x="109" y="0" destw="45" desth="474" ImageName="pgmk2_2.png" />
+			</Part0>			
+		</ChannelActive4>
+		<ChannelActive5 PartCount="1" ID="204">
+			<Part0 FrameCount="1" Draw_SrcBlend="true" styleID="0" stylesetID="1">
+				<Frame0 alpha="0.6" u="126" v="166" h="84" w="16" x="155" y="0" destw="45" desth="474" ImageName="pgmk2_2.png" />
+			</Part0>
+			<Part0 FrameCount="1" Draw_SrcBlend="true" styleID="1" stylesetID="1">
+				<Frame0 alpha="0.6" u="126" v="166" h="84" w="16" x="147" y="0" destw="30" desth="474" ImageName="pgmk2_2.png" />
+			</Part0>
+			<Part0 FrameCount="1" Draw_SrcBlend="true" styleID="2" stylesetID="1">
+				<Frame0 alpha="0.6" u="178" v="166" h="84" w="16" x="154" y="0" destw="30" desth="474" ImageName="pgmk2_2.png" />
+			</Part0>				
+		</ChannelActive5>
+		<ChannelActive6 PartCount="1" ID="205">
+			<Part0 FrameCount="1" Draw_SrcBlend="true" styleID="0" stylesetID="1">
+				<Frame0 alpha="0.6" u="178" v="166" h="84" w="16" x="200" y="0" destw="45" desth="474" ImageName="pgmk2_2.png" />
+			</Part0>
+			<Part0 FrameCount="1" Draw_SrcBlend="true" styleID="1" stylesetID="1">
+				<Frame0 alpha="0.6" u="178" v="166" h="84" w="16" x="177" y="0" destw="30" desth="474" ImageName="pgmk2_2.png" />
+			</Part0>
+			<Part0 FrameCount="1" Draw_SrcBlend="true" styleID="2" stylesetID="1">
+				<Frame0 alpha="0.6" u="126" v="166" h="84" w="16" x="184" y="0" destw="30" desth="474" ImageName="pgmk2_2.png" />
+			</Part0>				
+		</ChannelActive6>
+		
+		<ChannelActive7 PartCount="1" ID="206">
+			<Part0 FrameCount="1" Draw_SrcBlend="true" styleID="1" stylesetID="1">
+				<Frame0 alpha="0.6" u="178" v="166" h="84" w="16" x="207" y="0" destw="37" desth="474" ImageName="pgmk2_2.png" />
+			</Part0>
+			<Part0 FrameCount="1" Draw_SrcBlend="true" styleID="2" stylesetID="1">
+				<Frame0 alpha="0.6" u="178" v="166" h="84" w="16" x="214" y="0" destw="30" desth="474" ImageName="pgmk2_2.png" />
+			</Part0>				
+		</ChannelActive7>
+				
+		<LongNote2 AutoGenerate="true" ID="151" styleID="0" stylesetID="1"></LongNote2>
+		<LongNote3 AutoGenerate="true" ID="152" styleID="0" stylesetID="1"></LongNote3>
+		<LongNote4 AutoGenerate="true" ID="153" styleID="0" stylesetID="1"></LongNote4>
+		<LongNote5 AutoGenerate="true" ID="154" styleID="0" stylesetID="1"></LongNote5>
+		<LongNote6 AutoGenerate="true" ID="155" styleID="0" stylesetID="1"></LongNote6>
+				
+		<LongNote1 AutoGenerate="true" ID="150" styleID="1" stylesetID="1"></LongNote1>				
+		<LongNote2 AutoGenerate="true" ID="151" styleID="1" stylesetID="1"></LongNote2>
+		<LongNote3 AutoGenerate="true" ID="152" styleID="1" stylesetID="1"></LongNote3>
+		<LongNote4 AutoGenerate="true" ID="153" styleID="1" stylesetID="1"></LongNote4>
+		<LongNote5 AutoGenerate="true" ID="154" styleID="1" stylesetID="1"></LongNote5>
+		<LongNote6 AutoGenerate="true" ID="155" styleID="1" stylesetID="1"></LongNote6>
+		<LongNote7 AutoGenerate="true" ID="156" styleID="1" stylesetID="1"></LongNote7>		
+		
+				
+		<LongNote1 AutoGenerate="true" ID="150" styleID="2" stylesetID="1"></LongNote1>				
+		<LongNote2 AutoGenerate="true" ID="151" styleID="2" stylesetID="1"></LongNote2>
+		<LongNote3 AutoGenerate="true" ID="152" styleID="2" stylesetID="1"></LongNote3>
+		<LongNote4 AutoGenerate="true" ID="153" styleID="2" stylesetID="1"></LongNote4>
+		<LongNote5 AutoGenerate="true" ID="154" styleID="2" stylesetID="1"></LongNote5>
+		<LongNote6 AutoGenerate="true" ID="155" styleID="2" stylesetID="1"></LongNote6>
+		<LongNote7 AutoGenerate="true" ID="156" styleID="2" stylesetID="1"></LongNote7>		
+		
+		<TrackBar PartCount="2" ID="7">
+			<Part0 FrameCount="5" FrameSpeed="5" EnableClip="true" clipLeft="0" clipRight="800" clipTop="0"
+				clipBottom="480">
+				<Frame0 u="198" v="169" w="50" h="3" x="20" destw="225" orgy="1" ImageName="pgmk2_2.png" />
+				<Frame0 u="198" v="177" w="50" h="3" x="20" destw="225" orgy="1" ImageName="pgmk2_2.png" />
+				<Frame0 u="198" v="185" w="50" h="3" x="20" destw="225" orgy="1" ImageName="pgmk2_2.png" />
+				<Frame0 u="198" v="193" w="50" h="3" x="20" destw="225" orgy="1" ImageName="pgmk2_2.png" />
+				<Frame0 u="198" v="201" w="50" h="3" x="20" destw="225" orgy="1" ImageName="pgmk2_2.png" />
+			</Part0>
+		</TrackBar>
+		<CheckBar PartCount="1" ID="8">
+			<Part0 FrameCount="1">
+				<Frame0 u="222" v="219" w="8" h="14" x="20" y="443" destw="224" desth="12" ImageName="pgmk2_1.png" />
+			</Part0>
+			<Part0 FrameCount="12" Draw_SrcBlend="true" FrameSpeed="22.3">
+				<Frame0 u="222" v="130" alpha="1.10" w="8" h="89" x="20" y="385" destw="224" ImageName="pgmk2_1.png" />
+				<Frame0 u="222" v="130" alpha="0.13" w="8" h="89" x="20" y="385" destw="224" ImageName="pgmk2_1.png" />
+				<Frame0 u="222" v="130" alpha="0.16" w="8" h="89" x="20" y="385" destw="224" ImageName="pgmk2_1.png" />
+				<Frame0 u="222" v="130" alpha="0.12" w="8" h="89" x="20" y="385" destw="224" ImageName="pgmk2_1.png" />
+				<Frame0 u="222" v="130" alpha="0.12" w="8" h="89" x="20" y="385" destw="224" ImageName="pgmk2_1.png" />
+				<Frame0 u="222" v="130" alpha="0.15" w="8" h="89" x="20" y="385" destw="224" ImageName="pgmk2_1.png" />
+				<Frame0 u="222" v="130" alpha="0.19" w="8" h="89" x="20" y="385" destw="224" ImageName="pgmk2_1.png" />
+				<Frame0 u="222" v="130" alpha="0.24" w="8" h="89" x="20" y="385" destw="224" ImageName="pgmk2_1.png" />
+				<Frame0 u="222" v="130" alpha="0.29" w="8" h="89" x="20" y="385" destw="224" ImageName="pgmk2_1.png" />
+				<Frame0 u="222" v="130" alpha="0.39" w="8" h="89" x="20" y="385" destw="224" ImageName="pgmk2_1.png" />
+				<Frame0 u="222" v="130" alpha="0.50" w="8" h="89" x="20" y="385" destw="224" ImageName="pgmk2_1.png" />
+				<Frame0 u="222" v="130" alpha="0.50" w="8" h="89" x="20" y="385" destw="224" ImageName="pgmk2_1.png" />
+			</Part0>
+
+		</CheckBar>
+		<Flare1_0 PartCount="2" ID="250">		
+			<Part0 FrameCount="4" FrameSpeed="33.3" Draw_ColorAdd="true" styleID="1" stylesetID="1">
+				<Frame0 u="0" v="0" w="64" h="64" x="38" y="448" destw="256" desth="256" orgx="128" orgy="128"
+					ImageName="BOMB0001.png" />
+				<Frame0 u="64" v="0" w="64" h="64" x="38" y="448" destw="256" desth="256" orgx="128" orgy="128"
+					ImageName="BOMB0001.png" />
+				<Frame0 u="128" v="0" w="64" h="64" x="38" y="448" destw="256" desth="256" orgx="128" orgy="128"
+					ImageName="BOMB0001.png" />
+				<Frame0 u="192" v="0" w="64" h="64" x="38" y="448" destw="256" desth="256" orgx="128" orgy="128"
+					ImageName="BOMB0001.png" />
+			</Part0>
+			<Part0 FrameCount="4" FrameSpeed="33.3" Draw_ColorAdd="true" styleID="1" stylesetID="1">
+				<Frame0 u="61" v="66" w="62" h="62" x="38" y="448" destw="200" desth="200" orgx="100" orgy="100"
+					ImageName="BOMB0000.png" colorR="0.9" colorG="0.14" colorB="0.14" />
+				<Frame0 u="61" v="66" w="62" h="62" x="38" y="448" destw="214" desth="214" orgx="107" orgy="107"
+					ImageName="BOMB0000.png" colorR="0.9" colorG="0.14" colorB="0.14" />
+				<Frame0 u="61" v="66" w="62" h="62" x="38" y="448" destw="228" desth="228" orgx="114" orgy="114"
+					ImageName="BOMB0000.png" colorR="0.9" colorG="0.14" colorB="0.14" />
+				<Frame0 u="61" v="66" w="62" h="62" x="38" y="448" destw="256" desth="256" orgx="128" orgy="128"
+					ImageName="BOMB0000.png" colorR="0.9" colorG="0.14" colorB="0.14" />
+			</Part0>	
+			
+			<Part0 FrameCount="4" FrameSpeed="33.3" Draw_ColorAdd="true" styleID="2" stylesetID="1">
+				<Frame0 u="0" v="0" w="64" h="64" x="34" y="448" destw="256" desth="256" orgx="128" orgy="128"
+					ImageName="BOMB0001.png" />
+				<Frame0 u="64" v="0" w="64" h="64" x="34" y="448" destw="256" desth="256" orgx="128" orgy="128"
+					ImageName="BOMB0001.png" />
+				<Frame0 u="128" v="0" w="64" h="64" x="34" y="448" destw="256" desth="256" orgx="128" orgy="128"
+					ImageName="BOMB0001.png" />
+				<Frame0 u="192" v="0" w="64" h="64" x="34" y="448" destw="256" desth="256" orgx="128" orgy="128"
+					ImageName="BOMB0001.png" />
+			</Part0>
+			<Part0 FrameCount="4" FrameSpeed="33.3" Draw_ColorAdd="true" styleID="2" stylesetID="1">
+				<Frame0 u="61" v="66" w="62" h="62" x="34" y="448" destw="200" desth="200" orgx="100" orgy="100"
+					ImageName="BOMB0000.png" colorR="0.9" colorG="0.14" colorB="0.14" />
+				<Frame0 u="61" v="66" w="62" h="62" x="34" y="448" destw="214" desth="214" orgx="107" orgy="107"
+					ImageName="BOMB0000.png" colorR="0.9" colorG="0.14" colorB="0.14" />
+				<Frame0 u="61" v="66" w="62" h="62" x="34" y="448" destw="228" desth="228" orgx="114" orgy="114"
+					ImageName="BOMB0000.png" colorR="0.9" colorG="0.14" colorB="0.14" />
+				<Frame0 u="61" v="66" w="62" h="62" x="34" y="448" destw="256" desth="256" orgx="128" orgy="128"
+					ImageName="BOMB0000.png" colorR="0.9" colorG="0.14" colorB="0.14" />
+			</Part0>					
+		</Flare1_0>
+		<Flare2_0 PartCount="2" ID="251">
+			<Part0 FrameCount="4" FrameSpeed="33.3" Draw_ColorAdd="true" styleID="0" stylesetID="1">
+				<Frame0 u="0" v="0" w="64" h="64" x="40" y="448" destw="256" desth="256" orgx="128" orgy="128"
+					ImageName="BOMB0001.png" />
+				<Frame0 u="64" v="0" w="64" h="64" x="40" y="448" destw="256" desth="256" orgx="128" orgy="128"
+					ImageName="BOMB0001.png" />
+				<Frame0 u="128" v="0" w="64" h="64" x="40" y="448" destw="256" desth="256" orgx="128" orgy="128"
+					ImageName="BOMB0001.png" />
+				<Frame0 u="192" v="0" w="64" h="64" x="40" y="448" destw="256" desth="256" orgx="128" orgy="128"
+					ImageName="BOMB0001.png" />
+			</Part0>
+			<Part0 FrameCount="4" FrameSpeed="33.3" Draw_ColorAdd="true" styleID="0" stylesetID="1">
+				<Frame0 u="61" v="66" w="62" h="62" x="40" y="448" destw="200" desth="200" orgx="100" orgy="100"
+					ImageName="BOMB0000.png" colorR="0.9" colorG="0.14" colorB="0.14" />
+				<Frame0 u="61" v="66" w="62" h="62" x="40" y="448" destw="214" desth="214" orgx="107" orgy="107"
+					ImageName="BOMB0000.png" colorR="0.9" colorG="0.14" colorB="0.14" />
+				<Frame0 u="61" v="66" w="62" h="62" x="40" y="448" destw="228" desth="228" orgx="114" orgy="114"
+					ImageName="BOMB0000.png" colorR="0.9" colorG="0.14" colorB="0.14" />
+				<Frame0 u="61" v="66" w="62" h="62" x="40" y="448" destw="256" desth="256" orgx="128" orgy="128"
+					ImageName="BOMB0000.png" colorR="0.9" colorG="0.14" colorB="0.14" />
+			</Part0>
+		
+			<Part0 FrameCount="4" FrameSpeed="33.3" Draw_ColorAdd="true" styleID="1" stylesetID="1">
+				<Frame0 u="0" v="0" w="64" h="64" x="71" y="448" destw="256" desth="256" orgx="128" orgy="128"
+					ImageName="BOMB0001.png" />
+				<Frame0 u="64" v="0" w="64" h="64" x="71" y="448" destw="256" desth="256" orgx="128" orgy="128"
+					ImageName="BOMB0001.png" />
+				<Frame0 u="128" v="0" w="64" h="64" x="71" y="448" destw="256" desth="256" orgx="128" orgy="128"
+					ImageName="BOMB0001.png" />
+				<Frame0 u="192" v="0" w="64" h="64" x="71" y="448" destw="256" desth="256" orgx="128" orgy="128"
+					ImageName="BOMB0001.png" />
+			</Part0>
+			<Part0 FrameCount="4" FrameSpeed="33.3" Draw_ColorAdd="true" styleID="1" stylesetID="1">
+				<Frame0 u="61" v="66" w="62" h="62" x="71" y="448" destw="200" desth="200" orgx="100" orgy="100"
+					ImageName="BOMB0000.png" colorR="0.9" colorG="0.14" colorB="0.14" />
+				<Frame0 u="61" v="66" w="62" h="62" x="71" y="448" destw="214" desth="214" orgx="107" orgy="107"
+					ImageName="BOMB0000.png" colorR="0.9" colorG="0.14" colorB="0.14" />
+				<Frame0 u="61" v="66" w="62" h="62" x="71" y="448" destw="228" desth="228" orgx="114" orgy="114"
+					ImageName="BOMB0000.png" colorR="0.9" colorG="0.14" colorB="0.14" />
+				<Frame0 u="61" v="66" w="62" h="62" x="71" y="448" destw="256" desth="256" orgx="128" orgy="128"
+					ImageName="BOMB0000.png" colorR="0.9" colorG="0.14" colorB="0.14" />
+			</Part0>
+			
+			
+			<Part0 FrameCount="4" FrameSpeed="33.3" Draw_ColorAdd="true" styleID="2" stylesetID="1">
+				<Frame0 u="0" v="0" w="64" h="64" x="64" y="448" destw="256" desth="256" orgx="128" orgy="128"
+					ImageName="BOMB0001.png" />
+				<Frame0 u="64" v="0" w="64" h="64" x="64" y="448" destw="256" desth="256" orgx="128" orgy="128"
+					ImageName="BOMB0001.png" />
+				<Frame0 u="128" v="0" w="64" h="64" x="64" y="448" destw="256" desth="256" orgx="128" orgy="128"
+					ImageName="BOMB0001.png" />
+				<Frame0 u="192" v="0" w="64" h="64" x="64" y="448" destw="256" desth="256" orgx="128" orgy="128"
+					ImageName="BOMB0001.png" />
+			</Part0>
+			<Part0 FrameCount="4" FrameSpeed="33.3" Draw_ColorAdd="true" styleID="2" stylesetID="1">
+				<Frame0 u="61" v="66" w="62" h="62" x="64" y="448" destw="200" desth="200" orgx="100" orgy="100"
+					ImageName="BOMB0000.png" colorB="0.9" colorG="0.14" colorR="0.14" />
+				<Frame0 u="61" v="66" w="62" h="62" x="64" y="448" destw="214" desth="214" orgx="107" orgy="107"
+					ImageName="BOMB0000.png" colorB="0.9" colorG="0.14" colorR="0.14" />
+				<Frame0 u="61" v="66" w="62" h="62" x="64" y="448" destw="228" desth="228" orgx="114" orgy="114"
+					ImageName="BOMB0000.png" colorB="0.9" colorG="0.14" colorR="0.14" />
+				<Frame0 u="61" v="66" w="62" h="62" x="64" y="448" destw="256" desth="256" orgx="128" orgy="128"
+					ImageName="BOMB0000.png" colorB="0.9" colorG="0.14" colorR="0.14" />
+			</Part0>						
+				
+		</Flare2_0>
+		<Flare3_0 PartCount="1" ID="252">
+			<Part0 FrameCount="4" FrameSpeed="33.3" Draw_ColorAdd="true"  styleID="0" stylesetID="1">
+				<Frame0 u="0" v="0" w="64" h="64" x="85" y="448" destw="256" desth="256" orgx="128" orgy="128"
+					ImageName="BOMB0001.png" />
+				<Frame0 u="64" v="0" w="64" h="64" x="85" y="448" destw="256" desth="256" orgx="128" orgy="128"
+					ImageName="BOMB0001.png" />
+				<Frame0 u="128" v="0" w="64" h="64" x="85" y="448" destw="256" desth="256" orgx="128" orgy="128"
+					ImageName="BOMB0001.png" />
+				<Frame0 u="192" v="0" w="64" h="64" x="85" y="448" destw="256" desth="256" orgx="128" orgy="128"
+					ImageName="BOMB0001.png" />
+			</Part0>
+			<Part0 FrameCount="4" FrameSpeed="33.3" Draw_ColorAdd="true"  styleID="0" stylesetID="1">
+				<Frame0 u="61" v="66" w="62" h="62" x="85" y="448" destw="200" desth="200" orgx="100" orgy="100"
+					ImageName="BOMB0000.png" colorB="0.9" colorG="0.14" colorR="0.14" />
+				<Frame0 u="61" v="66" w="62" h="62" x="85" y="448" destw="214" desth="214" orgx="107" orgy="107"
+					ImageName="BOMB0000.png" colorB="0.9" colorG="0.14" colorR="0.14" />
+				<Frame0 u="61" v="66" w="62" h="62" x="85" y="448" destw="228" desth="228" orgx="114" orgy="114"
+					ImageName="BOMB0000.png" colorB="0.9" colorG="0.14" colorR="0.14" />
+				<Frame0 u="61" v="66" w="62" h="62" x="85" y="448" destw="256" desth="256" orgx="128" orgy="128"
+					ImageName="BOMB0000.png" colorB="0.9" colorG="0.14" colorR="0.14" />
+				</Part0>
+					
+					
+			<Part0 FrameCount="4" FrameSpeed="33.3" Draw_ColorAdd="true" styleID="1" stylesetID="1">
+				<Frame0 u="0" v="0" w="64" h="64" x="102" y="448" destw="256" desth="256" orgx="128" orgy="128"
+					ImageName="BOMB0001.png" />
+				<Frame0 u="64" v="0" w="64" h="64" x="102" y="448" destw="256" desth="256" orgx="128" orgy="128"
+					ImageName="BOMB0001.png" />
+				<Frame0 u="128" v="0" w="64" h="64" x="102" y="448" destw="256" desth="256" orgx="128" orgy="128"
+					ImageName="BOMB0001.png" />
+				<Frame0 u="192" v="0" w="64" h="64" x="102" y="448" destw="256" desth="256" orgx="128" orgy="128"
+					ImageName="BOMB0001.png" />
+			</Part0>
+			<Part0 FrameCount="4" FrameSpeed="33.3" Draw_ColorAdd="true" styleID="1" stylesetID="1">
+				<Frame0 u="61" v="66" w="62" h="62" x="102" y="448" destw="200" desth="200" orgx="100" orgy="100"
+					ImageName="BOMB0000.png" colorB="0.9" colorG="0.14" colorR="0.14" />
+				<Frame0 u="61" v="66" w="62" h="62" x="102" y="448" destw="214" desth="214" orgx="107" orgy="107"
+					ImageName="BOMB0000.png" colorB="0.9" colorG="0.14" colorR="0.14" />
+				<Frame0 u="61" v="66" w="62" h="62" x="102" y="448" destw="228" desth="228" orgx="114" orgy="114"
+					ImageName="BOMB0000.png" colorB="0.9" colorG="0.14" colorR="0.14" />
+				<Frame0 u="61" v="66" w="62" h="62" x="102" y="448" destw="256" desth="256" orgx="128" orgy="128"
+					ImageName="BOMB0000.png" colorB="0.9" colorG="0.14" colorR="0.14" />
+			</Part0>
+			
+			
+			<Part0 FrameCount="4" FrameSpeed="33.3" Draw_ColorAdd="true" styleID="2" stylesetID="1">
+				<Frame0 u="0" v="0" w="64" h="64" x="94" y="448" destw="256" desth="256" orgx="128" orgy="128"
+					ImageName="BOMB0001.png" />
+				<Frame0 u="64" v="0" w="64" h="64" x="94" y="448" destw="256" desth="256" orgx="128" orgy="128"
+					ImageName="BOMB0001.png" />
+				<Frame0 u="128" v="0" w="64" h="64" x="94" y="448" destw="256" desth="256" orgx="128" orgy="128"
+					ImageName="BOMB0001.png" />
+				<Frame0 u="192" v="0" w="64" h="64" x="94" y="448" destw="256" desth="256" orgx="128" orgy="128"
+					ImageName="BOMB0001.png" />
+			</Part0>
+			<Part0 FrameCount="4" FrameSpeed="33.3" Draw_ColorAdd="true" styleID="2" stylesetID="1">
+				<Frame0 u="61" v="66" w="62" h="62" x="94" y="448" destw="200" desth="200" orgx="100" orgy="100"
+					ImageName="BOMB0000.png" colorR="0.9" colorG="0.14" colorB="0.14" />
+				<Frame0 u="61" v="66" w="62" h="62" x="94" y="448" destw="214" desth="214" orgx="107" orgy="107"
+					ImageName="BOMB0000.png" colorR="0.9" colorG="0.14" colorB="0.14" />
+				<Frame0 u="61" v="66" w="62" h="62" x="94" y="448" destw="228" desth="228" orgx="114" orgy="114"
+					ImageName="BOMB0000.png" colorR="0.9" colorG="0.14" colorB="0.14" />
+				<Frame0 u="61" v="66" w="62" h="62" x="94" y="448" destw="256" desth="256" orgx="128" orgy="128"
+					ImageName="BOMB0000.png" colorR="0.9" colorG="0.14" colorB="0.14" />
+			</Part0>	
+			
+			
+	
+		</Flare3_0>
+		<Flare4_0 PartCount="1" ID="253">
+			<Part0 FrameCount="4" FrameSpeed="33.3" Draw_ColorAdd="true" styleID="0" stylesetID="1">
+				<Frame0 u="0" v="0" w="64" h="64" x="130" y="448" destw="256" desth="256" orgx="128" orgy="128"
+					ImageName="BOMB0001.png" />
+				<Frame0 u="64" v="0" w="64" h="64" x="130" y="448" destw="256" desth="256" orgx="128" orgy="128"
+					ImageName="BOMB0001.png" />
+				<Frame0 u="128" v="0" w="64" h="64" x="130" y="448" destw="256" desth="256" orgx="128" orgy="128"
+					ImageName="BOMB0001.png" />
+				<Frame0 u="192" v="0" w="64" h="64" x="130" y="448" destw="256" desth="256" orgx="128" orgy="128"
+					ImageName="BOMB0001.png" />
+			</Part0>
+			<Part0 FrameCount="4" FrameSpeed="33.3" Draw_ColorAdd="true" styleID="0" stylesetID="1">
+				<Frame0 u="61" v="66" w="62" h="62" x="130" y="448" destw="200" desth="200" orgx="100" orgy="100"
+					ImageName="BOMB0000.png" colorR="0.9" colorG="0.14" colorB="0.14" />
+				<Frame0 u="61" v="66" w="62" h="62" x="130" y="448" destw="214" desth="214" orgx="107" orgy="107"
+					ImageName="BOMB0000.png" colorR="0.9" colorG="0.14" colorB="0.14" />
+				<Frame0 u="61" v="66" w="62" h="62" x="130" y="448" destw="228" desth="228" orgx="114" orgy="114"
+					ImageName="BOMB0000.png" colorR="0.9" colorG="0.14" colorB="0.14" />
+				<Frame0 u="61" v="66" w="62" h="62" x="130" y="448" destw="256" desth="256" orgx="128" orgy="128"
+					ImageName="BOMB0000.png" colorR="0.9" colorG="0.14" colorB="0.14" />
+			</Part0>
+			
+			
+			
+				
+			<Part0 FrameCount="4" FrameSpeed="33.3" Draw_ColorAdd="true" styleID="1" stylesetID="1">
+				<Frame0 u="0" v="0" w="64" h="64" x="132" y="448" destw="256" desth="256" orgx="128" orgy="128"
+					ImageName="BOMB0001.png" />
+				<Frame0 u="64" v="0" w="64" h="64" x="132" y="448" destw="256" desth="256" orgx="128" orgy="128"
+					ImageName="BOMB0001.png" />
+				<Frame0 u="128" v="0" w="64" h="64" x="132" y="448" destw="256" desth="256" orgx="128" orgy="128"
+					ImageName="BOMB0001.png" />
+				<Frame0 u="192" v="0" w="64" h="64" x="132" y="448" destw="256" desth="256" orgx="128" orgy="128"
+					ImageName="BOMB0001.png" />
+			</Part0>
+			<Part0 FrameCount="4" FrameSpeed="33.3" Draw_ColorAdd="true" styleID="1" stylesetID="1">
+				<Frame0 u="61" v="66" w="62" h="62" x="132" y="448" destw="200" desth="200" orgx="100" orgy="100"
+					ImageName="BOMB0000.png" colorR="0.9" colorG="0.14" colorB="0.14" />
+				<Frame0 u="61" v="66" w="62" h="62" x="132" y="448" destw="214" desth="214" orgx="107" orgy="107"
+					ImageName="BOMB0000.png" colorR="0.9" colorG="0.14" colorB="0.14" />
+				<Frame0 u="61" v="66" w="62" h="62" x="132" y="448" destw="228" desth="228" orgx="114" orgy="114"
+					ImageName="BOMB0000.png" colorR="0.9" colorG="0.14" colorB="0.14" />
+				<Frame0 u="61" v="66" w="62" h="62" x="132" y="448" destw="256" desth="256" orgx="128" orgy="128"
+					ImageName="BOMB0000.png" colorR="0.9" colorG="0.14" colorB="0.14" />
+			</Part0>
+			
+			
+			<Part0 FrameCount="4" FrameSpeed="33.3" Draw_ColorAdd="true" styleID="2" stylesetID="1">
+				<Frame0 u="0" v="0" w="64" h="64" x="131" y="448" destw="256" desth="256" orgx="128" orgy="128"
+					ImageName="BOMB0001.png" />
+				<Frame0 u="64" v="0" w="64" h="64" x="131" y="448" destw="256" desth="256" orgx="128" orgy="128"
+					ImageName="BOMB0001.png" />
+				<Frame0 u="128" v="0" w="64" h="64" x="131" y="448" destw="256" desth="256" orgx="128" orgy="128"
+					ImageName="BOMB0001.png" />
+				<Frame0 u="192" v="0" w="64" h="64" x="131" y="448" destw="256" desth="256" orgx="128" orgy="128"
+					ImageName="BOMB0001.png" />
+			</Part0>
+			<Part0 FrameCount="4" FrameSpeed="33.3" Draw_ColorAdd="true" styleID="2" stylesetID="1">
+				<Frame0 u="61" v="66" w="62" h="62" x="131" y="448" destw="200" desth="200" orgx="100" orgy="100"
+					ImageName="BOMB0000.png" colorR="0.9" colorG="0.14" colorB="0.14" />
+				<Frame0 u="61" v="66" w="62" h="62" x="131" y="448" destw="214" desth="214" orgx="107" orgy="107"
+					ImageName="BOMB0000.png" colorR="0.9" colorG="0.14" colorB="0.14" />
+				<Frame0 u="61" v="66" w="62" h="62" x="131" y="448" destw="228" desth="228" orgx="114" orgy="114"
+					ImageName="BOMB0000.png" colorR="0.9" colorG="0.14" colorB="0.14" />
+				<Frame0 u="61" v="66" w="62" h="62" x="131" y="448" destw="256" desth="256" orgx="128" orgy="128"
+					ImageName="BOMB0000.png" colorR="0.9" colorG="0.14" colorB="0.14" />	
+			</Part0>		
+			
+		</Flare4_0>
+		<Flare5_0 PartCount="1" ID="254">
+			<Part0 FrameCount="4" FrameSpeed="33.3" Draw_ColorAdd="true" styleID="0" stylesetID="1">
+				<Frame0 u="0" v="0" w="64" h="64" x="175" y="448" destw="256" desth="256" orgx="128" orgy="128"
+					ImageName="BOMB0001.png" />
+				<Frame0 u="64" v="0" w="64" h="64" x="175" y="448" destw="256" desth="256" orgx="128" orgy="128"
+					ImageName="BOMB0001.png" />
+				<Frame0 u="128" v="0" w="64" h="64" x="175" y="448" destw="256" desth="256" orgx="128" orgy="128"
+					ImageName="BOMB0001.png" />
+				<Frame0 u="192" v="0" w="64" h="64" x="175" y="448" destw="256" desth="256" orgx="128" orgy="128"
+					ImageName="BOMB0001.png" />
+			</Part0>
+			<Part0 FrameCount="4" FrameSpeed="33.3" Draw_ColorAdd="true" styleID="0" stylesetID="1">
+				<Frame0 u="61" v="66" w="62" h="62" x="175" y="448" destw="200" desth="200" orgx="100" orgy="100"
+					ImageName="BOMB0000.png" colorB="0.9" colorG="0.14" colorR="0.14" />
+				<Frame0 u="61" v="66" w="62" h="62" x="175" y="448" destw="214" desth="214" orgx="107" orgy="107"
+					ImageName="BOMB0000.png" colorB="0.9" colorG="0.14" colorR="0.14" />
+				<Frame0 u="61" v="66" w="62" h="62" x="175" y="448" destw="228" desth="228" orgx="114" orgy="114"
+					ImageName="BOMB0000.png" colorB="0.9" colorG="0.14" colorR="0.14" />
+				<Frame0 u="61" v="66" w="62" h="62" x="175" y="448" destw="256" desth="256" orgx="128" orgy="128"
+					ImageName="BOMB0000.png" colorB="0.9" colorG="0.14" colorR="0.14" />
+			</Part0>
+					
+		
+			
+				
+			<Part0 FrameCount="4" FrameSpeed="33.3" Draw_ColorAdd="true" styleID="1" stylesetID="1">
+				<Frame0 u="0" v="0" w="64" h="64" x="162" y="448" destw="256" desth="256" orgx="128" orgy="128"
+					ImageName="BOMB0001.png" />
+				<Frame0 u="64" v="0" w="64" h="64" x="162" y="448" destw="256" desth="256" orgx="128" orgy="128"
+					ImageName="BOMB0001.png" />
+				<Frame0 u="128" v="0" w="64" h="64" x="162" y="448" destw="256" desth="256" orgx="128" orgy="128"
+					ImageName="BOMB0001.png" />
+				<Frame0 u="192" v="0" w="64" h="64" x="162" y="448" destw="256" desth="256" orgx="128" orgy="128"
+					ImageName="BOMB0001.png" />
+			</Part0>
+			<Part0 FrameCount="4" FrameSpeed="33.3" Draw_ColorAdd="true" styleID="1" stylesetID="1">
+				<Frame0 u="61" v="66" w="62" h="62" x="162" y="448" destw="200" desth="200" orgx="100" orgy="100"
+					ImageName="BOMB0000.png" colorB="0.9" colorG="0.14" colorR="0.14" />
+				<Frame0 u="61" v="66" w="62" h="62" x="162" y="448" destw="214" desth="214" orgx="107" orgy="107"
+					ImageName="BOMB0000.png" colorB="0.9" colorG="0.14" colorR="0.14" />
+				<Frame0 u="61" v="66" w="62" h="62" x="162" y="448" destw="228" desth="228" orgx="114" orgy="114"
+					ImageName="BOMB0000.png" colorB="0.9" colorG="0.14" colorR="0.14" />
+				<Frame0 u="61" v="66" w="62" h="62" x="162" y="448" destw="256" desth="256" orgx="128" orgy="128"
+					ImageName="BOMB0000.png" colorB="0.9" colorG="0.14" colorR="0.14" />
+			</Part0>
+			
+			
+			<Part0 FrameCount="4" FrameSpeed="33.3" Draw_ColorAdd="true" styleID="2" stylesetID="1">
+				<Frame0 u="0" v="0" w="64" h="64" x="169" y="448" destw="256" desth="256" orgx="128" orgy="128"
+					ImageName="BOMB0001.png" />
+				<Frame0 u="64" v="0" w="64" h="64" x="169" y="448" destw="256" desth="256" orgx="128" orgy="128"
+					ImageName="BOMB0001.png" />
+				<Frame0 u="128" v="0" w="64" h="64" x="169" y="448" destw="256" desth="256" orgx="128" orgy="128"
+					ImageName="BOMB0001.png" />
+				<Frame0 u="192" v="0" w="64" h="64" x="169" y="448" destw="256" desth="256" orgx="128" orgy="128"
+					ImageName="BOMB0001.png" />
+			</Part0>
+			<Part0 FrameCount="4" FrameSpeed="33.3" Draw_ColorAdd="true" styleID="2" stylesetID="1">
+				<Frame0 u="61" v="66" w="62" h="62" x="169" y="448" destw="200" desth="200" orgx="100" orgy="100"
+					ImageName="BOMB0000.png" colorR="0.9" colorG="0.14" colorB="0.14" />
+				<Frame0 u="61" v="66" w="62" h="62" x="169" y="448" destw="214" desth="214" orgx="107" orgy="107"
+					ImageName="BOMB0000.png" colorR="0.9" colorG="0.14" colorB="0.14" />
+				<Frame0 u="61" v="66" w="62" h="62" x="169" y="448" destw="228" desth="228" orgx="114" orgy="114"
+					ImageName="BOMB0000.png" colorR="0.9" colorG="0.14" colorB="0.14" />
+				<Frame0 u="61" v="66" w="62" h="62" x="169" y="448" destw="256" desth="256" orgx="128" orgy="128"
+					ImageName="BOMB0000.png" colorR="0.9" colorG="0.14" colorB="0.14" />	
+			</Part0>
+		</Flare5_0>
+		<Flare6_0 PartCount="1" ID="255">
+			<Part0 FrameCount="4" FrameSpeed="33.3" Draw_ColorAdd="true" styleID="0" stylesetID="1">
+				<Frame0 u="0" v="0" w="64" h="64" x="220" y="448" destw="256" desth="256" orgx="128" orgy="128"
+					ImageName="BOMB0001.png" />
+				<Frame0 u="64" v="0" w="64" h="64" x="220" y="448" destw="256" desth="256" orgx="128" orgy="128"
+					ImageName="BOMB0001.png" />
+				<Frame0 u="128" v="0" w="64" h="64" x="220" y="448" destw="256" desth="256" orgx="128" orgy="128"
+					ImageName="BOMB0001.png" />
+				<Frame0 u="192" v="0" w="64" h="64" x="220" y="448" destw="256" desth="256" orgx="128" orgy="128"
+					ImageName="BOMB0001.png" />				
+			</Part0>
+			<Part0 FrameCount="4" FrameSpeed="33.3" Draw_ColorAdd="true" styleID="0" stylesetID="1">
+				<Frame0 u="61" v="66" w="62" h="62" x="220" y="448" destw="200" desth="200" orgx="100" orgy="100"
+					ImageName="BOMB0000.png" colorR="0.9" colorG="0.14" colorB="0.14" />
+				<Frame0 u="61" v="66" w="62" h="62" x="220" y="448" destw="214" desth="214" orgx="107" orgy="107"
+					ImageName="BOMB0000.png" colorR="0.9" colorG="0.14" colorB="0.14" />
+				<Frame0 u="61" v="66" w="62" h="62" x="220" y="448" destw="228" desth="228" orgx="114" orgy="114"
+					ImageName="BOMB0000.png" colorR="0.9" colorG="0.14" colorB="0.14" />
+				<Frame0 u="61" v="66" w="62" h="62" x="220" y="448" destw="256" desth="256" orgx="128" orgy="128"
+					ImageName="BOMB0000.png" colorR="0.9" colorG="0.14" colorB="0.14" />
+			</Part0>
+			
+	
+			
+				
+			<Part0 FrameCount="4" FrameSpeed="33.3" Draw_ColorAdd="true" styleID="1" stylesetID="1">
+				<Frame0 u="0" v="0" w="64" h="64" x="192" y="448" destw="256" desth="256" orgx="128" orgy="128"
+					ImageName="BOMB0001.png" />
+				<Frame0 u="64" v="0" w="64" h="64" x="192" y="448" destw="256" desth="256" orgx="128" orgy="128"
+					ImageName="BOMB0001.png" />
+				<Frame0 u="128" v="0" w="64" h="64" x="192" y="448" destw="256" desth="256" orgx="128" orgy="128"
+					ImageName="BOMB0001.png" />
+				<Frame0 u="192" v="0" w="64" h="64" x="192" y="448" destw="256" desth="256" orgx="128" orgy="128"
+					ImageName="BOMB0001.png" />
+			</Part0>
+			<Part0 FrameCount="4" FrameSpeed="33.3" Draw_ColorAdd="true" styleID="1" stylesetID="1">
+				<Frame0 u="61" v="66" w="62" h="62" x="192" y="448" destw="200" desth="200" orgx="100" orgy="100"
+					ImageName="BOMB0000.png" colorR="0.9" colorG="0.14" colorB="0.14" />
+				<Frame0 u="61" v="66" w="62" h="62" x="192" y="448" destw="214" desth="214" orgx="107" orgy="107"
+					ImageName="BOMB0000.png" colorR="0.9" colorG="0.14" colorB="0.14" />
+				<Frame0 u="61" v="66" w="62" h="62" x="192" y="448" destw="228" desth="228" orgx="114" orgy="114"
+					ImageName="BOMB0000.png" colorR="0.9" colorG="0.14" colorB="0.14" />
+				<Frame0 u="61" v="66" w="62" h="62" x="192" y="448" destw="256" desth="256" orgx="128" orgy="128"
+					ImageName="BOMB0000.png" colorR="0.9" colorG="0.14" colorB="0.14" />
+			</Part0>
+			
+			
+			<Part0 FrameCount="4" FrameSpeed="33.3" Draw_ColorAdd="true" styleID="2" stylesetID="1">
+				<Frame0 u="0" v="0" w="64" h="64" x="199" y="448" destw="256" desth="256" orgx="128" orgy="128"
+					ImageName="BOMB0001.png" />
+				<Frame0 u="64" v="0" w="64" h="64" x="199" y="448" destw="256" desth="256" orgx="128" orgy="128"
+					ImageName="BOMB0001.png" />
+				<Frame0 u="128" v="0" w="64" h="64" x="199" y="448" destw="256" desth="256" orgx="128" orgy="128"
+					ImageName="BOMB0001.png" />
+				<Frame0 u="192" v="0" w="64" h="64" x="199" y="448" destw="256" desth="256" orgx="128" orgy="128"
+					ImageName="BOMB0001.png" />
+			</Part0>
+			<Part0 FrameCount="4" FrameSpeed="33.3" Draw_ColorAdd="true" styleID="2" stylesetID="1">
+				<Frame0 u="61" v="66" w="62" h="62" x="199" y="448" destw="200" desth="200" orgx="100" orgy="100"
+					ImageName="BOMB0000.png" colorB="0.9" colorG="0.14" colorR="0.14" />
+				<Frame0 u="61" v="66" w="62" h="62" x="199" y="448" destw="214" desth="214" orgx="107" orgy="107"
+					ImageName="BOMB0000.png" colorB="0.9" colorG="0.14" colorR="0.14" />
+				<Frame0 u="61" v="66" w="62" h="62" x="199" y="448" destw="228" desth="228" orgx="114" orgy="114"
+					ImageName="BOMB0000.png" colorB="0.9" colorG="0.14" colorR="0.14" />
+				<Frame0 u="61" v="66" w="62" h="62" x="199" y="448" destw="256" desth="256" orgx="128" orgy="128"
+					ImageName="BOMB0000.png" colorB="0.9" colorG="0.14" colorR="0.14" />	
+			</Part0>			
+		</Flare6_0>
+		<Flare7_0 ID = "256">
+	
+			
+				
+			<Part0 FrameCount="4" FrameSpeed="33.3" Draw_ColorAdd="true" styleID="1" stylesetID="1">
+				<Frame0 u="0" v="0" w="64" h="64" x="226" y="448" destw="256" desth="256" orgx="128" orgy="128"
+					ImageName="BOMB0001.png" />
+				<Frame0 u="64" v="0" w="64" h="64" x="226" y="448" destw="256" desth="256" orgx="128" orgy="128"
+					ImageName="BOMB0001.png" />
+				<Frame0 u="128" v="0" w="64" h="64" x="226" y="448" destw="256" desth="256" orgx="128" orgy="128"
+					ImageName="BOMB0001.png" />
+				<Frame0 u="192" v="0" w="64" h="64" x="226" y="448" destw="256" desth="256" orgx="128" orgy="128"
+					ImageName="BOMB0001.png" />
+			</Part0>
+			<Part0 FrameCount="4" FrameSpeed="33.3" Draw_ColorAdd="true" styleID="1" stylesetID="1">
+				<Frame0 u="61" v="66" w="62" h="62" x="226" y="448" destw="200" desth="200" orgx="100" orgy="100"
+					ImageName="BOMB0000.png" colorR="0.9" colorG="0.14" colorB="0.14" />
+				<Frame0 u="61" v="66" w="62" h="62" x="226" y="448" destw="214" desth="214" orgx="107" orgy="107"
+					ImageName="BOMB0000.png" colorR="0.9" colorG="0.14" colorB="0.14" />
+				<Frame0 u="61" v="66" w="62" h="62" x="226" y="448" destw="228" desth="228" orgx="114" orgy="114"
+					ImageName="BOMB0000.png" colorR="0.9" colorG="0.14" colorB="0.14" />
+				<Frame0 u="61" v="66" w="62" h="62" x="226" y="448" destw="256" desth="256" orgx="128" orgy="128"
+					ImageName="BOMB0000.png" colorR="0.9" colorG="0.14" colorB="0.14" />
+			</Part0>
+			
+			
+			<Part0 FrameCount="4" FrameSpeed="33.3" Draw_ColorAdd="true" styleID="2" stylesetID="1">
+				<Frame0 u="0" v="0" w="64" h="64" x="229" y="448" destw="256" desth="256" orgx="128" orgy="128"
+					ImageName="BOMB0001.png" />
+				<Frame0 u="64" v="0" w="64" h="64" x="229" y="448" destw="256" desth="256" orgx="128" orgy="128"
+					ImageName="BOMB0001.png" />
+				<Frame0 u="128" v="0" w="64" h="64" x="229" y="448" destw="256" desth="256" orgx="128" orgy="128"
+					ImageName="BOMB0001.png" />
+				<Frame0 u="192" v="0" w="64" h="64" x="229" y="448" destw="256" desth="256" orgx="128" orgy="128"
+					ImageName="BOMB0001.png" />
+			</Part0>
+			<Part0 FrameCount="4" FrameSpeed="33.3" Draw_ColorAdd="true" styleID="2" stylesetID="1">
+				<Frame0 u="61" v="66" w="62" h="62" x="229" y="448" destw="200" desth="200" orgx="100" orgy="100"
+					ImageName="BOMB0000.png" colorR="0.9" colorG="0.14" colorB="0.14" />
+				<Frame0 u="61" v="66" w="62" h="62" x="229" y="448" destw="214" desth="214" orgx="107" orgy="107"
+					ImageName="BOMB0000.png" colorR="0.9" colorG="0.14" colorB="0.14" />
+				<Frame0 u="61" v="66" w="62" h="62" x="229" y="448" destw="228" desth="228" orgx="114" orgy="114"
+					ImageName="BOMB0000.png" colorR="0.9" colorG="0.14" colorB="0.14" />
+				<Frame0 u="61" v="66" w="62" h="62" x="229" y="448" destw="256" desth="256" orgx="128" orgy="128"
+					ImageName="BOMB0000.png" colorR="0.9" colorG="0.14" colorB="0.14" />	
+			</Part0>		
+		</Flare7_0>
+		<FlareLong1 PartCount="1" ID="350">
+			<Part0 FrameCount="4" FrameSpeed="33.3" Draw_ColorAdd="true"styleID="1" stylesetID="1">
+				<Frame0 u="0" v="0" w="64" h="64" x="38" y="448" orgx="32" orgy="32"
+					ImageName="BOMB0000.png" />
+				<Frame0 u="64" v="0" w="64" h="64" x="38" y="448" orgx="32" orgy="32"
+					ImageName="BOMB0000.png" />
+				<Frame0 u="128" v="0" w="64" h="64"  x="38" y="448" orgx="32" orgy="32"
+					ImageName="BOMB0000.png" />
+				<Frame0 u="192" v="0" w="64" h="64"  x="38" y="448" orgx="32" orgy="32"
+					ImageName="BOMB0000.png" />
+			</Part0>
+			<Part0 FrameCount="4" FrameSpeed="33.3" Draw_ColorAdd="true"styleID="2" stylesetID="1">
+				<Frame0 u="0" v="0" w="64" h="64" x="34" y="448" orgx="32" orgy="32"
+					ImageName="BOMB0000.png" />
+				<Frame0 u="64" v="0" w="64" h="64" x="34" y="448" orgx="32" orgy="32"
+					ImageName="BOMB0000.png" />
+				<Frame0 u="128" v="0" w="64" h="64"  x="34" y="448" orgx="32" orgy="32"
+					ImageName="BOMB0000.png" />
+				<Frame0 u="192" v="0" w="64" h="64"  x="34" y="448" orgx="32" orgy="32"
+					ImageName="BOMB0000.png" />
+			</Part0>		
+		</FlareLong2>		
+		<FlareLong2 PartCount="1" ID="351">
+			<Part0 FrameCount="4" FrameSpeed="33.3" Draw_ColorAdd="true" styleID="0" stylesetID="1">
+				<Frame0 u="0" v="0" w="64" h="64" destw="256" desth="256" x="40" y="448" orgx="128" orgy="128"
+					ImageName="BOMB0000.png" />
+				<Frame0 u="64" v="0" w="64" h="64" destw="256" desth="256" x="40" y="448" orgx="128" orgy="128"
+					ImageName="BOMB0000.png" />
+				<Frame0 u="128" v="0" w="64" h="64" destw="256" desth="256" x="40" y="448" orgx="128" orgy="128"
+					ImageName="BOMB0000.png" />
+				<Frame0 u="192" v="0" w="64" h="64" destw="256" desth="256" x="40" y="448" orgx="128" orgy="128"
+					ImageName="BOMB0000.png" />
+			</Part0>
+		<Part0 FrameCount="4" FrameSpeed="33.3" Draw_ColorAdd="true"styleID="1" stylesetID="1">
+				<Frame0 u="0" v="0" w="64" h="64" x="71" y="448" orgx="32" orgy="32"
+					ImageName="BOMB0000.png" />
+				<Frame0 u="64" v="0" w="64" h="64" x="71" y="448" orgx="32" orgy="32"
+					ImageName="BOMB0000.png" />
+				<Frame0 u="128" v="0" w="64" h="64"  x="71" y="448" orgx="32" orgy="32"
+					ImageName="BOMB0000.png" />
+				<Frame0 u="192" v="0" w="64" h="64"  x="71" y="448" orgx="32" orgy="32"
+					ImageName="BOMB0000.png" />
+			</Part0>
+			<Part0 FrameCount="4" FrameSpeed="33.3" Draw_ColorAdd="true"styleID="2" stylesetID="1">
+				<Frame0 u="0" v="0" w="64" h="64" x="63" y="448" orgx="32" orgy="32"
+					ImageName="BOMB0000.png" />
+				<Frame0 u="64" v="0" w="64" h="64" x="63" y="448" orgx="32" orgy="32"
+					ImageName="BOMB0000.png" />
+				<Frame0 u="128" v="0" w="64" h="64"  x="63" y="448" orgx="32" orgy="32"
+					ImageName="BOMB0000.png" />
+				<Frame0 u="192" v="0" w="64" h="64"  x="63" y="448" orgx="32" orgy="32"
+					ImageName="BOMB0000.png" />
+			</Part0>				
+		</FlareLong2>
+		<FlareLong3 PartCount="1" ID="352">
+			<Part0 FrameCount="4" FrameSpeed="33.3" Draw_ColorAdd="true" styleID="0" stylesetID="1">
+				<Frame0 u="0" v="0" w="64" h="64" destw="256" desth="256" x="85" y="448" orgx="128" orgy="128"
+					ImageName="BOMB0000.png" />
+				<Frame0 u="64" v="0" w="64" h="64" destw="256" desth="256" x="85" y="448" orgx="128" orgy="128"
+					ImageName="BOMB0000.png" />
+				<Frame0 u="128" v="0" w="64" h="64" destw="256" desth="256" x="85" y="448" orgx="128" orgy="128"
+					ImageName="BOMB0000.png" />
+				<Frame0 u="192" v="0" w="64" h="64" destw="256" desth="256" x="85" y="448" orgx="128" orgy="128"
+					ImageName="BOMB0000.png" />
+			</Part0>
+		<Part0 FrameCount="4" FrameSpeed="33.3" Draw_ColorAdd="true"styleID="1" stylesetID="1">
+				<Frame0 u="0" v="0" w="64" h="64" x="102" y="448" orgx="32" orgy="32"
+					ImageName="BOMB0000.png" />
+				<Frame0 u="64" v="0" w="64" h="64" x="102" y="448" orgx="32" orgy="32"
+					ImageName="BOMB0000.png" />
+				<Frame0 u="128" v="0" w="64" h="64"  x="102" y="448" orgx="32" orgy="32"
+					ImageName="BOMB0000.png" />
+				<Frame0 u="192" v="0" w="64" h="64"  x="102" y="448" orgx="32" orgy="32"
+					ImageName="BOMB0000.png" />
+			</Part0>
+			<Part0 FrameCount="4" FrameSpeed="33.3" Draw_ColorAdd="true"styleID="2" stylesetID="1">
+				<Frame0 u="0" v="0" w="64" h="64" x="94" y="448" orgx="32" orgy="32"
+					ImageName="BOMB0000.png" />
+				<Frame0 u="64" v="0" w="64" h="64" x="94" y="448" orgx="32" orgy="32"
+					ImageName="BOMB0000.png" />
+				<Frame0 u="128" v="0" w="64" h="64"  x="94" y="448" orgx="32" orgy="32"
+					ImageName="BOMB0000.png" />
+				<Frame0 u="192" v="0" w="64" h="64"  x="94" y="448" orgx="32" orgy="32"
+					ImageName="BOMB0000.png" />
+			</Part0>				
+		</FlareLong3>
+		<FlareLong4 PartCount="1" ID="353">
+			<Part0 FrameCount="4" FrameSpeed="33.3" Draw_ColorAdd="true" styleID="0" stylesetID="1">
+				<Frame0 u="0" v="0" w="64" h="64" destw="256" desth="256" x="130" y="448" orgx="128" orgy="128"
+					ImageName="BOMB0000.png" />
+				<Frame0 u="64" v="0" w="64" h="64" destw="256" desth="256" x="130" y="448" orgx="128" orgy="128"
+					ImageName="BOMB0000.png" />
+				<Frame0 u="128" v="0" w="64" h="64" destw="256" desth="256" x="130" y="448" orgx="128" orgy="128"
+					ImageName="BOMB0000.png" />
+				<Frame0 u="192" v="0" w="64" h="64" destw="256" desth="256" x="130" y="448" orgx="128" orgy="128"
+					ImageName="BOMB0000.png" />
+			</Part0>
+		<Part0 FrameCount="4" FrameSpeed="33.3" Draw_ColorAdd="true"styleID="1" stylesetID="1">
+				<Frame0 u="0" v="0" w="64" h="64" x="132" y="448" orgx="32" orgy="32"
+					ImageName="BOMB0000.png" />
+				<Frame0 u="64" v="0" w="64" h="64" x="132" y="448" orgx="32" orgy="32"
+					ImageName="BOMB0000.png" />
+				<Frame0 u="128" v="0" w="64" h="64"  x="132" y="448" orgx="32" orgy="32"
+					ImageName="BOMB0000.png" />
+				<Frame0 u="192" v="0" w="64" h="64"  x="132" y="448" orgx="32" orgy="32"
+					ImageName="BOMB0000.png" />
+			</Part0>
+			<Part0 FrameCount="4" FrameSpeed="33.3" Draw_ColorAdd="true"styleID="2" stylesetID="1">
+				<Frame0 u="0" v="0" w="64" h="64" x="131" y="448" orgx="32" orgy="32"
+					ImageName="BOMB0000.png" />
+				<Frame0 u="64" v="0" w="64" h="64" x="131" y="448" orgx="32" orgy="32"
+					ImageName="BOMB0000.png" />
+				<Frame0 u="128" v="0" w="64" h="64"  x="131" y="448" orgx="32" orgy="32"
+					ImageName="BOMB0000.png" />
+				<Frame0 u="192" v="0" w="64" h="64"  x="131" y="448" orgx="32" orgy="32"
+					ImageName="BOMB0000.png" />
+			</Part0>				
+		</FlareLong4>
+		<FlareLong5 PartCount="1" ID="354">
+			<Part0 FrameCount="4" FrameSpeed="33.3" Draw_ColorAdd="true" styleID="0" stylesetID="1">
+				<Frame0 u="0" v="0" w="64" h="64" destw="256" desth="256" x="175" y="448" orgx="128" orgy="128"
+					ImageName="BOMB0000.png" />
+				<Frame0 u="64" v="0" w="64" h="64" destw="256" desth="256" x="175" y="448" orgx="128" orgy="128"
+					ImageName="BOMB0000.png" />
+				<Frame0 u="128" v="0" w="64" h="64" destw="256" desth="256" x="175" y="448" orgx="128" orgy="128"
+					ImageName="BOMB0000.png" />
+				<Frame0 u="192" v="0" w="64" h="64" destw="256" desth="256" x="175" y="448" orgx="128" orgy="128"
+					ImageName="BOMB0000.png" />
+			</Part0>
+		<Part0 FrameCount="4" FrameSpeed="33.3" Draw_ColorAdd="true"styleID="1" stylesetID="1">
+				<Frame0 u="0" v="0" w="64" h="64"		x="162" y="448" orgx="32" orgy="32"
+					ImageName="BOMB0000.png" />
+				<Frame0 u="64" v="0" w="64" h="64"	x="162" y="448" orgx="32" orgy="32"
+					ImageName="BOMB0000.png" />
+				<Frame0 u="128" v="0" w="64" h="64"  x="162" y="448" orgx="32" orgy="32"
+					ImageName="BOMB0000.png" />
+				<Frame0 u="192" v="0" w="64" h="64"  x="162" y="448" orgx="32" orgy="32"
+					ImageName="BOMB0000.png" />
+			</Part0>
+			<Part0 FrameCount="4" FrameSpeed="33.3" Draw_ColorAdd="true"styleID="2" stylesetID="1">
+				<Frame0 u="0" v="0" w="64" h="64"		x="169" y="448" orgx="32" orgy="32"
+					ImageName="BOMB0000.png" />
+				<Frame0 u="64" v="0" w="64" h="64"	x="169" y="448" orgx="32" orgy="32"
+					ImageName="BOMB0000.png" />
+				<Frame0 u="128" v="0" w="64" h="64"  x="169" y="448" orgx="32" orgy="32"
+					ImageName="BOMB0000.png" />
+				<Frame0 u="192" v="0" w="64" h="64"  x="169" y="448" orgx="32" orgy="32"
+					ImageName="BOMB0000.png" />
+			</Part0>				
+		</FlareLong5>
+		<FlareLong6 PartCount="1" ID="355">
+			<Part0 FrameCount="4" FrameSpeed="33.3" Draw_ColorAdd="true" styleID="0" stylesetID="1">
+				<Frame0 u="0" v="0" w="64" h="64" destw="256" desth="256" x="220" y="448" orgx="128" orgy="128"
+					ImageName="BOMB0000.png" />
+				<Frame0 u="64" v="0" w="64" h="64" destw="256" desth="256" x="220" y="448" orgx="128" orgy="128"
+					ImageName="BOMB0000.png" />
+				<Frame0 u="128" v="0" w="64" h="64" destw="256" desth="256" x="220" y="448" orgx="128" orgy="128"
+					ImageName="BOMB0000.png" />
+				<Frame0 u="192" v="0" w="64" h="64" destw="256" desth="256" x="220" y="448" orgx="128" orgy="128"
+					ImageName="BOMB0000.png" />
+			</Part0>
+			<Part0 FrameCount="4" FrameSpeed="33.3" Draw_ColorAdd="true"styleID="1" stylesetID="1">
+				<Frame0 u="0" v="0" w="64" h="64"		x="192" y="448" orgx="32" orgy="32"
+					ImageName="BOMB0000.png" />
+				<Frame0 u="64" v="0" w="64" h="64"	x="192" y="448" orgx="32" orgy="32"
+					ImageName="BOMB0000.png" />
+				<Frame0 u="128" v="0" w="64" h="64"  x="192" y="448" orgx="32" orgy="32"
+					ImageName="BOMB0000.png" />
+				<Frame0 u="192" v="0" w="64" h="64"  x="192" y="448" orgx="32" orgy="32"
+					ImageName="BOMB0000.png" />
+			</Part0>
+			<Part0 FrameCount="4" FrameSpeed="33.3" Draw_ColorAdd="true"styleID="2" stylesetID="1">
+				<Frame0 u="0" v="0" w="64" h="64"		x="199" y="448" orgx="32" orgy="32"
+					ImageName="BOMB0000.png" />
+				<Frame0 u="64" v="0" w="64" h="64"	x="199" y="448" orgx="32" orgy="32"
+					ImageName="BOMB0000.png" />
+				<Frame0 u="128" v="0" w="64" h="64"  x="199" y="448" orgx="32" orgy="32"
+					ImageName="BOMB0000.png" />
+				<Frame0 u="192" v="0" w="64" h="64"  x="199" y="448" orgx="32" orgy="32"
+					ImageName="BOMB0000.png" />
+			</Part0>			
+		</FlareLong6>
+		<FlareLong7 ID = "356">
+			<Part0 FrameCount="4" FrameSpeed="33.3" Draw_ColorAdd="true"styleID="1" stylesetID="1">
+				<Frame0 u="0" v="0" w="64" h="64"		x="226" y="448" orgx="32" orgy="32"
+					ImageName="BOMB0000.png" />
+				<Frame0 u="64" v="0" w="64" h="64"	x="226" y="448" orgx="32" orgy="32"
+					ImageName="BOMB0000.png" />
+				<Frame0 u="128" v="0" w="64" h="64"  x="226" y="448" orgx="32" orgy="32"
+					ImageName="BOMB0000.png" />
+				<Frame0 u="192" v="0" w="64" h="64"  x="226" y="448" orgx="32" orgy="32"
+					ImageName="BOMB0000.png" />
+			</Part0>
+			<Part0 FrameCount="4" FrameSpeed="33.3" Draw_ColorAdd="true"styleID="2" stylesetID="1">
+				<Frame0 u="0" v="0" w="64" h="64"		x="229" y="448" orgx="32" orgy="32"
+					ImageName="BOMB0000.png" />
+				<Frame0 u="64" v="0" w="64" h="64"	x="229" y="448" orgx="32" orgy="32"
+					ImageName="BOMB0000.png" />
+				<Frame0 u="128" v="0" w="64" h="64"  x="229" y="448" orgx="32" orgy="32"
+					ImageName="BOMB0000.png" />
+				<Frame0 u="192" v="0" w="64" h="64"  x="229" y="448" orgx="32" orgy="32"
+					ImageName="BOMB0000.png" />
+			</Part0>
+		</FlareLong7>
+		
+		<Judgment_Number ID="12"  PartCount="6">
+			<Part0 FrameCount="25" FrameSpeed="33.3" Draw_SrcBlend="true" Draw_BlendOneOne="true" KeyFraming="true">
+				<Frame0 u="167" v="35" w="88" h="29" x="if(div(CurJudge,10),10,46)" y="350" destw="176" desth="58" orgx="88" orgy="29"
+					ImageName="combo.png" keyframeid="0" alpha="0.8" colorR="if(div(CurJudge,10),min(1,(sin(time()*8)+1)/2*1.5),1)" colorG="if(div(CurJudge,10),min(1,(sin(time()*8+0.5)+1)/2*1.5),1)"
+					colorB="if(div(CurJudge,10),min(1,(sin(time()*8+1)+1)/2*1.5),1)" />
+				<Frame0 u="167" v="35" w="88" h="29" x="if(div(CurJudge,10),71,89)" y="350" destw="88" desth="29" orgx="44" orgy="15"
+					ImageName="combo.png" keyframeid="4" alpha="0.8" colorR="if(div(CurJudge,10),min(1,(sin(time()*8)+1)/2*1.5),1)" colorG="if(div(CurJudge,10),min(1,(sin(time()*8+0.5)+1)/2*1.5),1)"
+					colorB="if(div(CurJudge,10),min(1,(sin(time()*8+1)+1)/2*1.5),1)" />
+				<Frame0 u="167" v="35" w="88" h="29" x="if(div(CurJudge,10),71,89)" y="350" destw="88" desth="29" orgx="44" orgy="15"
+					ImageName="combo.png" keyframeid="19" alpha="0.8" colorR="if(div(CurJudge,10),min(1,(sin(time()*8)+1)/2*1.5),1)" colorG="if(div(CurJudge,10),min(1,(sin(time()*8+0.5)+1)/2*1.5),1)"
+					colorB="if(div(CurJudge,10),min(1,(sin(time()*8+1)+1)/2*1.5),1)" />
+				<Frame0 u="167" v="35" w="88" h="29" x="if(div(CurJudge,10),40,67)" y="350" destw="132" desth="1" orgx="63" orgy="0"
+					ImageName="combo.png" keyframeid="24" alpha="0.8" colorR="if(div(CurJudge,10),min(1,(sin(time()*8)+1)/2*1.5),1)" colorG="if(div(CurJudge,10),min(1,(sin(time()*8+0.5)+1)/2*1.5),1)"
+					colorB="if(div(CurJudge,10),min(1,(sin(time()*8+1)+1)/2*1.5),1)" />
+			</Part0>	
+			<Part0 FrameCount="25" FrameSpeed="33.3" Draw_SrcBlend="true" Draw_BlendOneOne="true" KeyFraming="true">
+				<Frame0 u="167" v="2" w="38" h="29" x="if(div(CurJudge,10),306,282)" y="350" destw="79" desth="58" orgx="38" orgy="29"
+					ImageName="combo.png" keyframeid="0" alpha="0.8" colorR="if(div(CurJudge,10),min(1,(sin(time()*8)+1)/2*1.5),1)" colorG="if(div(CurJudge,10),min(1,(sin(time()*8+0.5)+1)/2*1.5),1)"
+					colorB="if(div(CurJudge,10),min(1,(sin(time()*8+1)+1)/2*1.5),1)"  />
+				<Frame0 u="167" v="2" w="38" h="29" x="if(div(CurJudge,10),219,207)" y="350" destw="38" desth="29" orgx="19" orgy="15"
+					ImageName="combo.png" keyframeid="4" alpha="0.8" colorR="if(div(CurJudge,10),min(1,(sin(time()*8)+1)/2*1.5),1)" colorG="if(div(CurJudge,10),min(1,(sin(time()*8+0.5)+1)/2*1.5),1)"
+					colorB="if(div(CurJudge,10),min(1,(sin(time()*8+1)+1)/2*1.5),1)"  />
+				<Frame0 u="167" v="2" w="38" h="29" x="if(div(CurJudge,10),219,207)" y="350" destw="38" desth="29" orgx="19" orgy="15"
+					ImageName="combo.png" keyframeid="19" alpha="0.8" colorR="if(div(CurJudge,10),min(1,(sin(time()*8)+1)/2*1.5),1)" colorG="if(div(CurJudge,10),min(1,(sin(time()*8+0.5)+1)/2*1.5),1)"
+					colorB="if(div(CurJudge,10),min(1,(sin(time()*8+1)+1)/2*1.5),1)"  />
+				<Frame0 u="167" v="2" w="38" h="29" x="if(div(CurJudge,10),262,244)" y="350" destw="57" desth="1" orgx="28" orgy="0"
+					ImageName="combo.png" keyframeid="24" alpha="0.8" colorR="if(div(CurJudge,10),min(1,(sin(time()*8)+1)/2*1.5),1)" colorG="if(div(CurJudge,10),min(1,(sin(time()*8+0.5)+1)/2*1.5),1)"
+					colorB="if(div(CurJudge,10),min(1,(sin(time()*8+1)+1)/2*1.5),1)" />
+			</Part0>	
+			<Part0 FrameCount="25" FrameSpeed="33.3" Draw_SrcBlend="true" Draw_BlendOneOne="true" KeyFraming="true">
+				<Frame0 u="1" v="1" w="31" h="31" x="if(div(CurJudge,10),244,218)" y="350" destw="79" desth="58" orgx="38" orgy="29"
+					ImageName="combo.png" keyframeid="0" alpha="0.8" colorR="if(div(CurJudge,10),min(1,(sin(time()*8)+1)/2*1.5),1)" colorG="if(div(CurJudge,10),min(1,(sin(time()*8+0.5)+1)/2*1.5),1)"
+					colorB="if(div(CurJudge,10),min(1,(sin(time()*8+1)+1)/2*1.5),1)" />
+				<Frame0 u="1" v="1" w="31" h="31" x="if(div(CurJudge,10),188,175)" y="350" destw="38" desth="29" orgx="19" orgy="15"
+					ImageName="combo.png" keyframeid="4" alpha="0.8" colorR="if(div(CurJudge,10),min(1,(sin(time()*8)+1)/2*1.5),1)" colorG="if(div(CurJudge,10),min(1,(sin(time()*8+0.5)+1)/2*1.5),1)"
+					colorB="if(div(CurJudge,10),min(1,(sin(time()*8+1)+1)/2*1.5),1)" />
+				<Frame0 u="1" v="1" w="31" h="31" x="if(div(CurJudge,10),188,175)" y="350" destw="38" desth="29" orgx="19" orgy="15"
+					ImageName="combo.png" keyframeid="19" alpha="0.8" colorR="if(div(CurJudge,10),min(1,(sin(time()*8)+1)/2*1.5),1)" colorG="if(div(CurJudge,10),min(1,(sin(time()*8+0.5)+1)/2*1.5),1)"
+					colorB="if(div(CurJudge,10),min(1,(sin(time()*8+1)+1)/2*1.5),1)" />
+				<Frame0 u="1" v="1" w="31" h="31" x="if(div(CurJudge,10),216,196)" y="350" destw="57" desth="1" orgx="28" orgy="0"
+					ImageName="combo.png" keyframeid="24" alpha="0.8" colorR="if(div(CurJudge,10),min(1,(sin(time()*8)+1)/2*1.5),1)" colorG="if(div(CurJudge,10),min(1,(sin(time()*8+0.5)+1)/2*1.5),1)"
+					colorB="if(div(CurJudge,10),min(1,(sin(time()*8+1)+1)/2*1.5),1)" />
+			</Part0>			
+			<Part0 FrameCount="25" FrameSpeed="33.3" Draw_SrcBlend="true" Draw_BlendOneOne="true" KeyFraming="true">
+				<Frame0 u="mod(mod(CurJudge,10),5)*33+1" v="div(mod(CurJudge,10),5)*33+1" w="31" h="31" x="if(div(CurJudge,10),182,156)" y="350" destw="79" desth="58" orgx="38" orgy="29"
+					ImageName="combo.png" keyframeid="0" alpha="0.8" colorR="if(div(CurJudge,10),min(1,(sin(time()*8)+1)/2*1.5),1)" colorG="if(div(CurJudge,10),min(1,(sin(time()*8+0.5)+1)/2*1.5),1)"
+					colorB="if(div(CurJudge,10),min(1,(sin(time()*8+1)+1)/2*1.5),1)" />
+				<Frame0 u="mod(mod(CurJudge,10),5)*33+1" v="div(mod(CurJudge,10),5)*33+1" w="31" h="31" x="if(div(CurJudge,10),157,144)" y="350" destw="38" desth="29" orgx="19" orgy="15"
+					ImageName="combo.png" keyframeid="4" alpha="0.8" colorR="if(div(CurJudge,10),min(1,(sin(time()*8)+1)/2*1.5),1)" colorG="if(div(CurJudge,10),min(1,(sin(time()*8+0.5)+1)/2*1.5),1)"
+					colorB="if(div(CurJudge,10),min(1,(sin(time()*8+1)+1)/2*1.5),1)" />
+				<Frame0 u="mod(mod(CurJudge,10),5)*33+1" v="div(mod(CurJudge,10),5)*33+1" w="31" h="31" x="if(div(CurJudge,10),157,144)" y="350" destw="38" desth="29" orgx="19" orgy="15"
+					ImageName="combo.png" keyframeid="19" alpha="0.8" colorR="if(div(CurJudge,10),min(1,(sin(time()*8)+1)/2*1.5),1)" colorG="if(div(CurJudge,10),min(1,(sin(time()*8+0.5)+1)/2*1.5),1)"
+					colorB="if(div(CurJudge,10),min(1,(sin(time()*8+1)+1)/2*1.5),1)" />
+				<Frame0 u="mod(mod(CurJudge,10),5)*33+1" v="div(mod(CurJudge,10),5)*33+1" w="31" h="31" x="if(div(CurJudge,10),169,150)" y="350" destw="57" desth="1" orgx="28" orgy="0"
+					ImageName="combo.png" keyframeid="24" alpha="0.8" colorR="if(div(CurJudge,10),min(1,(sin(time()*8)+1)/2*1.5),1)" colorG="if(div(CurJudge,10),min(1,(sin(time()*8+0.5)+1)/2*1.5),1)"
+					colorB="if(div(CurJudge,10),min(1,(sin(time()*8+1)+1)/2*1.5),1)" />
+			</Part0>	
+			<Part0 FrameCount="25" FrameSpeed="33.3" Draw_SrcBlend="true" Draw_BlendOneOne="true" KeyFraming="true">
+				<Frame0 u="34" v="1" w="31" h="31" x="120" y="350" destw="79*(div(CurJudge,10))" desth="58" orgx="38" orgy="29"
+					ImageName="combo.png" keyframeid="0" alpha="0.8" colorR="if(div(CurJudge,10),min(1,(sin(time()*8)+1)/2*1.5),1)" colorG="if(div(CurJudge,10),min(1,(sin(time()*8+0.5)+1)/2*1.5),1)"
+					colorB="if(div(CurJudge,10),min(1,(sin(time()*8+1)+1)/2*1.5),1)" />
+				<Frame0 u="34" v="1" w="31" h="31" x="126" y="350" destw="38*(div(CurJudge,10))" desth="29" orgx="19" orgy="15"
+					ImageName="combo.png" keyframeid="4" alpha="0.8" colorR="if(div(CurJudge,10),min(1,(sin(time()*8)+1)/2*1.5),1)" colorG="if(div(CurJudge,10),min(1,(sin(time()*8+0.5)+1)/2*1.5),1)"
+					colorB="if(div(CurJudge,10),min(1,(sin(time()*8+1)+1)/2*1.5),1)" />
+				<Frame0 u="34" v="1" w="31" h="31" x="126" y="350" destw="38*(div(CurJudge,10))" desth="29" orgx="19" orgy="15"
+					ImageName="combo.png" keyframeid="19" alpha="0.8" colorR="if(div(CurJudge,10),min(1,(sin(time()*8)+1)/2*1.5),1)" colorG="if(div(CurJudge,10),min(1,(sin(time()*8+0.5)+1)/2*1.5),1)"
+					colorB="if(div(CurJudge,10),min(1,(sin(time()*8+1)+1)/2*1.5),1)" />
+				<Frame0 u="34" v="1" w="31" h="31" x="123" y="350" destw="57*(div(CurJudge,10))" desth="1" orgx="28" orgy="0"
+					ImageName="combo.png" keyframeid="24" alpha="0.8" colorR="if(div(CurJudge,10),min(1,(sin(time()*8)+1)/2*1.5),1)" colorG="if(div(CurJudge,10),min(1,(sin(time()*8+0.5)+1)/2*1.5),1)"
+					colorB="if(div(CurJudge,10),min(1,(sin(time()*8+1)+1)/2*1.5),1)" />
+			</Part0>			
+											
+		</Judgment_Number>
+		
+		<Judgment_Fail PartCount="1" ID="1">
+			<Part0 FrameCount="25" FrameSpeed="33.3" Draw_SrcBlend="true" Draw_BlendOneOne="true" KeyFraming="true">
+				<Frame0 u="1" v="67" w="124" h="31" x="132" y="340" destw="248" desth="62" orgx="124" orgy="31"
+					ImageName="combo.png" keyframeid="0" />
+				<Frame0 u="1" v="67" w="124" h="31" x="132" y="340" destw="124" desth="31" orgx="62" orgy="15"
+					ImageName="combo.png" keyframeid="4" />
+				<Frame0 u="1" v="67" w="124" h="31" x="132" y="340" destw="124" desth="31" orgx="62" orgy="15"
+					ImageName="combo.png" keyframeid="19" />
+				<Frame0 u="1" v="67" w="124" h="31" x="132" y="340" destw="182" desth="1" orgx="90" orgy="0"
+					ImageName="combo.png" keyframeid="24" />
+			</Part0>
+		</Judgment_Fail>
+		<Judgment_Bad PartCount="1" ID="2">
+			<Part0 FrameCount="25" FrameSpeed="33.3" Draw_BlendOneOne="true" KeyFraming="true">
+				<Frame0 u="1" v="65" w="76" h="17" x="132" y="340" destw="152" desth="34" orgx="76" orgy="17"
+					ImageName="judge.png" keyframeid="0" />
+				<Frame0 u="1" v="65" w="76" h="17" x="132" y="340" destw="76" desth="17" orgx="38" orgy="8"
+					ImageName="judge.png" keyframeid="4" />
+				<Frame0 u="1" v="65" w="76" h="17" x="132" y="340" destw="76" desth="17" orgx="38" orgy="8"
+					ImageName="judge.png" keyframeid="19" />
+				<Frame0 u="1" v="65" w="76" h="17" x="132" y="340" destw="114" desth="1" orgx="57" orgy="0"
+					ImageName="judge.png" keyframeid="24" />
+			</Part0>
+		</Judgment_Bad>
+		<Judgment_Good PartCount="1" ID="3">
+			<Part0 FrameCount="25" FrameSpeed="33.3" Draw_BlendOneOne="true" KeyFraming="true">
+				<Frame0 u="1" v="41" w="103" h="23" x="132" y="340" destw="152" desth="34" orgx="76" orgy="17"
+					ImageName="judge.png" keyframeid="0" />
+				<Frame0 u="1" v="41" w="103" h="23" x="132" y="340" destw="103" desth="23" orgx="51" orgy="11"
+					ImageName="judge.png" keyframeid="4" />
+				<Frame0 u="1" v="41" w="103" h="23" x="132" y="340" destw="103" desth="23" orgx="51" orgy="11"
+					ImageName="judge.png" keyframeid="19" />
+				<Frame0 u="1" v="41" w="103" h="23" x="132" y="340" destw="177" desth="1" orgx="88" orgy="0"
+					ImageName="judge.png" keyframeid="24" />
+			</Part0>
+		</Judgment_Good>
+		<Judgment_Cool PartCount="1" ID="4">
+			<Part0 FrameCount="25" FrameSpeed="33.3" Draw_BlendOneOne="true" KeyFraming="true">
+				<Frame0 u="1" v="1" w="104" h="18" x="132" y="340" destw="208" desth="36" orgx="104" orgy="18"
+					ImageName="judge.png" keyframeid="0" colorR="min(1,(sin(time()*2)+1)/2*1.5)" colorG="min(1,(sin(time()*2+0.5)+1)/2*1.5)"
+					colorB="min(1,(sin(time()*2+1)+1)/2*1.5)" />
+				<Frame0 u="1" v="1" w="104" h="18" x="132" y="340" destw="104" desth="18" orgx="52" orgy="9"
+					ImageName="judge.png" keyframeid="4" colorR="min(1,(sin(time()*2)+1)/2*1.5)" colorG="min(1,(sin(time()*2+0.5)+1)/2*1.5)"
+					colorB="min(1,(sin(time()*2+1)+1)/2*1.5)" />
+				<Frame0 u="1" v="1" w="104" h="18" x="132" y="340" destw="104" desth="18" orgx="52" orgy="9"
+					ImageName="judge.png" keyframeid="19" colorR="min(1,(sin(time()*2)+1)/2*1.5)" colorG="min(1,(sin(time()*2+0.5)+1)/2*1.5)"
+					colorB="min(1,(sin(time()*2+1)+1)/2*1.5)" />
+				<Frame0 u="1" v="1" w="104" h="18" x="132" y="340" destw="156" desth="1" orgx="78" orgy="0"
+					ImageName="judge.png" keyframeid="24" colorR="min(1,(sin(time()*2)+1)/2*1.5)" colorG="min(1,(sin(time()*2+0.5)+1)/2*1.5)"
+					colorB="min(1,(sin(time()*2+1)+1)/2*1.5)" />
+			</Part0>
+		</Judgment_Cool>
+		<Judgment_Kool PartCount="1" ID="5">
+			<Part0 FrameCount="1" FrameSpeed="1" Draw_ColorAdd="true">
+				<Frame0 u="1" v="1" w="103" h="20" y="269" x="100" orgy="10" orgx="51" ImageName="font1.bmp" />
+			</Part0>
+		</Judgment_Kool>
+		<ComboNumber0 PartCount="1" ID="400">
+			<Part0 FrameCount="31" FrameSpeed="40" KeyFraming="true" Draw_SrcBlend="true">
+				<Frame0 u="1" v="100" w="49" h="40" y="146" x="130" orgy="35" orgx="30" ImageName="combo.png"
+					keyframeid="0" />
+				<Frame0 u="1" v="100" w="49" h="40" y="136" x="130" orgy="35" orgx="30" ImageName="combo.png"
+					keyframeid="5" />
+				<Frame0 u="1" v="100" w="49" h="40" y="136" x="130" orgy="35" orgx="30" ImageName="combo.png"
+					keyframeid="30" />
+			</Part0>
+		</ComboNumber0>
+		<ComboNumber1 PartCount="1" ID="401">
+			<Part0 FrameCount="31" FrameSpeed="40" KeyFraming="true" Draw_SrcBlend="true">
+				<Frame0 u="52" v="100" w="49" h="40" y="146" x="130" orgy="35" orgx="30" ImageName="combo.png"
+					keyframeid="0" />
+				<Frame0 u="52" v="100" w="49" h="40" y="136" x="130" orgy="35" orgx="30" ImageName="combo.png"
+					keyframeid="5" />
+				<Frame0 u="52" v="100" w="49" h="40" y="136" x="130" orgy="35" orgx="30" ImageName="combo.png"
+					keyframeid="30" />
+			</Part0>
+		</ComboNumber1>
+		<ComboNumber2 PartCount="1" ID="402">
+			<Part0 FrameCount="31" FrameSpeed="40" KeyFraming="true" Draw_SrcBlend="true">
+				<Frame0 u="103" v="100" w="49" h="40" y="146" x="130" orgy="35" orgx="30" ImageName="combo.png"
+					keyframeid="0" />
+				<Frame0 u="103" v="100" w="49" h="40" y="136" x="130" orgy="35" orgx="30" ImageName="combo.png"
+					keyframeid="5" />
+				<Frame0 u="103" v="100" w="49" h="40" y="136" x="130" orgy="35" orgx="30" ImageName="combo.png"
+					keyframeid="30" />
+			</Part0>
+		</ComboNumber2>
+		<ComboNumber3 PartCount="1" ID="403">
+			<Part0 FrameCount="31" FrameSpeed="40" KeyFraming="true" Draw_SrcBlend="true">
+				<Frame0 u="154" v="100" w="49" h="40" y="146" x="130" orgy="35" orgx="30" ImageName="combo.png"
+					keyframeid="0" />
+				<Frame0 u="154" v="100" w="49" h="40" y="136" x="130" orgy="35" orgx="30" ImageName="combo.png"
+					keyframeid="5" />
+				<Frame0 u="154" v="100" w="49" h="40" y="136" x="130" orgy="35" orgx="30" ImageName="combo.png"
+					keyframeid="30" />
+			</Part0>
+		</ComboNumber3>
+		<ComboNumber4 PartCount="1" ID="404">
+			<Part0 FrameCount="31" FrameSpeed="40" KeyFraming="true" Draw_SrcBlend="true">
+				<Frame0 u="205" v="100" w="49" h="40" y="146" x="130" orgy="35" orgx="30" ImageName="combo.png"
+					keyframeid="0" />
+				<Frame0 u="205" v="100" w="49" h="40" y="136" x="130" orgy="35" orgx="30" ImageName="combo.png"
+					keyframeid="5" />
+				<Frame0 u="205" v="100" w="49" h="40" y="136" x="130" orgy="35" orgx="30" ImageName="combo.png"
+					keyframeid="30" />
+			</Part0>
+		</ComboNumber4>
+		<ComboNumber5 PartCount="1" ID="405">
+			<Part0 FrameCount="31" FrameSpeed="40" KeyFraming="true" Draw_SrcBlend="true">
+				<Frame0 u="1" v="142" w="49" h="40" y="146" x="130" orgy="35" orgx="30" ImageName="combo.png"
+					keyframeid="0" />
+				<Frame0 u="1" v="142" w="49" h="40" y="136" x="130" orgy="35" orgx="30" ImageName="combo.png"
+					keyframeid="5" />
+				<Frame0 u="1" v="142" w="49" h="40" y="136" x="130" orgy="35" orgx="30" ImageName="combo.png"
+					keyframeid="30" />
+			</Part0>
+		</ComboNumber5>
+		<ComboNumber6 PartCount="1" ID="406">
+			<Part0 FrameCount="31" FrameSpeed="40" KeyFraming="true" Draw_SrcBlend="true">
+				<Frame0 u="52" v="142" w="49" h="40" y="146" x="130" orgy="35" orgx="30" ImageName="combo.png"
+					keyframeid="0" />
+				<Frame0 u="52" v="142" w="49" h="40" y="136" x="130" orgy="35" orgx="30" ImageName="combo.png"
+					keyframeid="5" />
+				<Frame0 u="52" v="142" w="49" h="40" y="136" x="130" orgy="35" orgx="30" ImageName="combo.png"
+					keyframeid="30" />
+			</Part0>
+		</ComboNumber6>
+		<ComboNumber7 PartCount="1" ID="407">
+			<Part0 FrameCount="31" FrameSpeed="40" KeyFraming="true" Draw_SrcBlend="true">
+				<Frame0 u="103" v="142" w="49" h="40" y="146" x="130" orgy="35" orgx="30" ImageName="combo.png"
+					keyframeid="0" />
+				<Frame0 u="103" v="142" w="49" h="40" y="136" x="130" orgy="35" orgx="30" ImageName="combo.png"
+					keyframeid="5" />
+				<Frame0 u="103" v="142" w="49" h="40" y="136" x="130" orgy="35" orgx="30" ImageName="combo.png"
+					keyframeid="30" />
+			</Part0>
+		</ComboNumber7>
+		<ComboNumber8 PartCount="1" ID="408">
+			<Part0 FrameCount="31" FrameSpeed="40" KeyFraming="true" Draw_SrcBlend="true">
+				<Frame0 u="154" v="142" w="49" h="40" y="146" x="130" orgy="35" orgx="30" ImageName="combo.png"
+					keyframeid="0" />
+				<Frame0 u="154" v="142" w="49" h="40" y="136" x="130" orgy="35" orgx="30" ImageName="combo.png"
+					keyframeid="5" />
+				<Frame0 u="154" v="142" w="49" h="40" y="136" x="130" orgy="35" orgx="30" ImageName="combo.png"
+					keyframeid="30" />
+			</Part0>
+		</ComboNumber8>
+		<ComboNumber9 PartCount="1" ID="409">
+			<Part0 FrameCount="31" FrameSpeed="40" KeyFraming="true" Draw_SrcBlend="true">
+				<Frame0 u="205" v="142" w="49" h="40" y="146" x="130" orgy="35" orgx="30" ImageName="combo.png"
+					keyframeid="0" />
+				<Frame0 u="205" v="142" w="49" h="40" y="136" x="130" orgy="35" orgx="30" ImageName="combo.png"
+					keyframeid="5" />
+				<Frame0 u="205" v="142" w="49" h="40" y="136" x="130" orgy="35" orgx="30" ImageName="combo.png"
+					keyframeid="30" />
+			</Part0>
+		</ComboNumber9>
+		<ScoreNumber0 PartCount="1" ID="410">
+			<Part0 FrameCount="1" Draw_SrcBlend="true">
+				<Frame0 u="2" v="1" w="19" h="21" y="452" x="171" ImageName="font_score.png" />
+			</Part0>
+		</ScoreNumber0>
+		<ScoreNumber1 PartCount="1" ID="411">
+			<Part0 FrameCount="1" Draw_SrcBlend="true">
+				<Frame0 u="23" v="1" w="19" h="21" y="452" x="171"  ImageName="font_score.png" />
+			</Part0>
+		</ScoreNumber1>
+		<ScoreNumber0 PartCount="1" ID="412">
+			<Part0 FrameCount="1" Draw_SrcBlend="true">
+				<Frame0 u="44" v="1" w="19" h="21" y="452" x="171"  ImageName="font_score.png" />
+			</Part0>
+		</ScoreNumber0>
+		<ScoreNumber0 PartCount="1" ID="413">
+			<Part0 FrameCount="1" Draw_SrcBlend="true">
+				<Frame0 u="65" v="1"w="19" h="21" y="452" x="171"  ImageName="font_score.png" />
+			</Part0>
+		</ScoreNumber0>
+		<ScoreNumber0 PartCount="1" ID="414">
+			<Part0 FrameCount="1" Draw_SrcBlend="true">
+				<Frame0 u="86" v="1" w="19" h="21" y="452" x="171"  ImageName="font_score.png" />
+			</Part0>
+		</ScoreNumber0>
+		<ScoreNumber0 PartCount="1" ID="415">
+			<Part0 FrameCount="1" Draw_SrcBlend="true">
+				<Frame0 u="107" v="1"w="19" h="21" y="452" x="171"  ImageName="font_score.png" />
+			</Part0>
+		</ScoreNumber0>
+		<ScoreNumber0 PartCount="1" ID="416">
+			<Part0 FrameCount="1" Draw_SrcBlend="true">
+				<Frame0 u="128" v="1"w="19" h="21" y="452" x="171"  ImageName="font_score.png" />
+			</Part0>
+		</ScoreNumber0>
+		<ScoreNumber0 PartCount="1" ID="417">
+			<Part0 FrameCount="1" Draw_SrcBlend="true">
+				<Frame0 u="149" v="1" w="19" h="21" y="452" x="171"  ImageName="font_score.png" />
+			</Part0>
+		</ScoreNumber0>
+		<ScoreNumber0 PartCount="1" ID="418">
+			<Part0 FrameCount="1" Draw_SrcBlend="true">
+				<Frame0 u="170" v="1" w="19" h="21" y="452" x="171" ImageName="font_score.png" />
+			</Part0>
+		</ScoreNumber0>
+		<ScoreNumber0 PartCount="1" ID="419">
+			<Part0 FrameCount="1" Draw_SrcBlend="true">
+				<Frame0 u="191" v="1" w="19" h="21" y="452" x="171" ImageName="font_score.png" />
+			</Part0>
+		</ScoreNumber0>
+		<LifeBar PartCount="1" ID="6">
+			<part0 FrameCount="1" Draw_SrcBlend="true" Draw_AlphaTest="true">
+				<Frame0 u="238" v="if(CurLife,2,max(2,2+(1-CurLife)*224+sin(time()*5)*10))" w="15" h="if(CurLife,224,min(224, 224-(1-CurLife)*224-sin(time()*5)*10))"
+					desth="if(CurLife,224,if(CurLife*10000,min(224, 224-(1-CurLife)*224-sin(time()*5)*10),0))" x="250" y="if(CurLife,284,max(284,284+(1-CurLife)*224+sin(time()*5)*10))"
+					orgy="0" orgx="0" ImageName="pgmk2_1.png" Draw_SrcBlend="true" Draw_AlphaTest="true" />
+			</part0>		
+		</LifeBar>
+				
+	</Component>
+	<IDRange>
+		
+</Skin>

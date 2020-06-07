@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="gb2312" ?>
+<Skin Version="2">
+	<Info>
+		<PlayArea y="0" h="457" />
+		<ScoreNumberPos x="190" y="567" />
+		<ComboNumberPos x="112" />
+		<Title	title="BM IIDX RED"/>
+	</Info>
+	<Component>
+		<Panel PartCount="8" FixedPos="true" ID="0">
+			<Part FrameCount="1" Draw_SrcBlend="true" Draw_AlphaTest = "true">
+				<Frame u="0" v="0" w="630" h="233" destw="394" desth="146" orgy="146" x="0" y="600" ImageName="11RedSP.png"/>
+			</Part>
+			<Part FrameCount="1" Draw_SrcBlend="true" Draw_AlphaTest = "true">
+				<Frame u="0" v="240" w="650" h="233" destw="406" desth="146" orgy="146" x="394" y="600" ImageName="11RedSP.png"/>
+			</Part>			
+			<Part FrameCount="1" Draw_SrcBlend="true" Draw_AlphaTest = "true">
+				<Frame u="698" v="0" w="22" h="600" destw="14" desth="454" orgy="0" x="11" y="0" ImageName="11RedSP.png"/>
+			</Part>					
+			<Part FrameCount="1" Draw_SrcBlend="true">
+				<Frame alpha="0.9" u="731" v="646" w="294" h="2" destw="184" desth="458"  x="28" y="0" ImageName="11RedSP.png"/>
+			</Part>					
+		</Panel>
+		<Note1 PartCount="1" ID="100">
+			<Part0 FrameCount="1" EnableClip="true" clipLeft="0" clipRight="800" clipTop="0"	clipBottom="457">
+				<Frame0 u="793" v="0" w="66" h="12" x="28" destw="39" desth = "8" orgy="8" y="CurNoteY1"  ImageName="11RedSP.png" />
+			</Part0>
+		</Note1>	
+		<Note2 PartCount="1" ID="101">
+			<Part0 FrameCount="1" EnableClip="true" clipLeft="0" clipRight="800" clipTop="0"	clipBottom="457">
+				<Frame0 u="793" v="12" w="38" h="12" x="67" destw="24" desth = "8" orgy="8" y="CurNoteY2" ImageName="11RedSP.png" />
+			</Part0>
+		</Note2>				
+		<Note2 PartCount="1" ID="102">
+			<Part0 FrameCount="1" EnableClip="true" clipLeft="0" clipRight="800" clipTop="0"	clipBottom="457">
+				<Frame0 u="793" v="24" w="30" h="12" x="91" destw="16" desth = "8" orgy="8" y="CurNoteY3" ImageName="11RedSP.png" />
+			</Part0>
+		</Note2>	
+		<Note2 PartCount="1" ID="103">
+			<Part0 FrameCount="1" EnableClip="true" clipLeft="0" clipRight="800" clipTop="0"	clipBottom="457">
+				<Frame0 u="793" v="12" w="38" h="12" x="107" destw="24" desth = "8" orgy="8" y="CurNoteY4" ImageName="11RedSP.png" />
+			</Part0>
+		</Note2>				
+		<Note2 PartCount="1" ID="104">
+			<Part0 FrameCount="1" EnableClip="true" clipLeft="0" clipRight="800" clipTop="0"	clipBottom="457">
+				<Frame0 u="793" v="24" w="30" h="12" x="131" destw="16" desth = "8" orgy="8" y="CurNoteY5" ImageName="11RedSP.png" />
+			</Part0>
+		</Note2>
+		<Note2 PartCount="1" ID="105">
+			<Part0 FrameCount="1" EnableClip="true" clipLeft="0" clipRight="800" clipTop="0"	clipBottom="457">
+				<Frame0 u="793" v="12" w="38" h="12" x="147" destw="24" desth = "8" orgy="8" y="CurNoteY6" ImageName="11RedSP.png" />
+			</Part0>
+		</Note2>				
+		<Note2 PartCount="1" ID="106">
+			<Part0 FrameCount="1" EnableClip="true" clipLeft="0" clipRight="800" clipTop="0"	clipBottom="457">
+				<Frame0 u="793" v="24" w="30" h="12" x="171" destw="16" desth = "8" orgy="8" y="CurNoteY7" ImageName="11RedSP.png" />
+			</Part0>
+		</Note2>
+		<Note2 PartCount="1" ID="107">
+			<Part0 FrameCount="1" EnableClip="true" clipLeft="0" clipRight="800" clipTop="0"	clipBottom="457">
+				<Frame0 u="793" v="12" w="38" h="12" x="187" destw="24" desth = "8" orgy="8" y="CurNoteY8" ImageName="11RedSP.png" />
+			</Part0>
+		</Note2>				
+							
+		<Flare1_0 PartCount="1" ID="250">
+			<Part FrameCount = "8" Draw_SrcBlend = "true" FrameSpeed="33.3">
+				<Frame0 u="140" v="700" w="160" h="160" x="48" y = "457" destw="100" desth = "100" orgy="50" orgx="50"   ImageName="11RedSP.png" />
+				<Frame0 u="300" v="700" w="160" h="160" x="48" y = "457" destw="100" desth = "100" orgy="50" orgx="50"   ImageName="11RedSP.png" />
+				<Frame0 u="460" v="700" w="160" h="160" x="48" y = "457" destw="100" desth = "100" orgy="50" orgx="50"   ImageName="11RedSP.png" />
+				<Frame0 u="620" v="700" w="160" h="160" x="48" y = "457" destw="100" desth = "100" orgy="50" orgx="50"   ImageName="11RedSP.png" />
+				<Frame0 u="140" v="860" w="160" h="160" x="48" y = "457" destw="100" desth = "100" orgy="50" orgx="50"   ImageName="11RedSP.png" />
+				<Frame0 u="300" v="860" w="160" h="160" x="48" y = "457" destw="100" desth = "100" orgy="50" orgx="50"   ImageName="11RedSP.png" />
+				<Frame0 u="460" v="860" w="160" h="160" x="48" y = "457" destw="100" desth = "100" orgy="50" orgx="50"   ImageName="11RedSP.png" />
+				<Frame0 u="620" v="860" w="160" h="160" x="48" y = "457" destw="100" desth = "100" orgy="50" orgx="50"   ImageName="11RedSP.png" />
+			</Part>
+		</Flare1_0>
+		<Flare1_0 PartCount="1" ID="251">
+			<Part FrameCount = "8" Draw_SrcBlend = "true" FrameSpeed="33.3">
+				<Frame0 u="140" v="700" w="160" h="160" x="80" y = "457" destw="100" desth = "100" orgy="50" orgx="50"   ImageName="11RedSP.png" />
+				<Frame0 u="300" v="700" w="160" h="160" x="80" y = "457" destw="100" desth = "100" orgy="50" orgx="50"   ImageName="11RedSP.png" />
+				<Frame0 u="460" v="700" w="160" h="160" x="80" y = "457" destw="100" desth = "100" orgy="50" orgx="50"   ImageName="11RedSP.png" />
+				<Frame0 u="620" v="700" w="160" h="160" x="80" y = "457" destw="100" desth = "100" orgy="50" orgx="50"   ImageName="11RedSP.png" />
+				<Frame0 u="140" v="860" w="160" h="160" x="80" y = "457" destw="100" desth = "100" orgy="50" orgx="50"   ImageName="11RedSP.png" />
+				<Frame0 u="300" v="860" w="160" h="160" x="80" y = "457" destw="100" desth = "100" orgy="50" orgx="50"   ImageName="11RedSP.png" />
+				<Frame0 u="460" v="860" w="160" h="160" x="80" y = "457" destw="100" desth = "100" orgy="50" orgx="50"   ImageName="11RedSP.png" />
+				<Frame0 u="620" v="860" w="160" h="160" x="80" y = "457" destw="100" desth = "100" orgy="50" orgx="50"   ImageName="11RedSP.png" />
+			</Part>
+		</Flare1_0>
+		<Flare1_0 PartCount="1" ID="252">
+			<Part FrameCount = "8" Draw_SrcBlend = "true" FrameSpeed="33.3">
+				<Frame0 u="140" v="700" w="160" h="160" x="99" y = "457" destw="100" desth = "100" orgy="50" orgx="50"   ImageName="11RedSP.png" />
+				<Frame0 u="300" v="700" w="160" h="160" x="99" y = "457" destw="100" desth = "100" orgy="50" orgx="50"   ImageName="11RedSP.png" />
+				<Frame0 u="460" v="700" w="160" h="160" x="99" y = "457" destw="100" desth = "100" orgy="50" orgx="50"   ImageName="11RedSP.png" />
+				<Frame0 u="620" v="700" w="160" h="160" x="99" y = "457" destw="100" desth = "100" orgy="50" orgx="50"   ImageName="11RedSP.png" />
+				<Frame0 u="140" v="860" w="160" h="160" x="99" y = "457" destw="100" desth = "100" orgy="50" orgx="50"   ImageName="11RedSP.png" />
+				<Frame0 u="300" v="860" w="160" h="160" x="99" y = "457" destw="100" desth = "100" orgy="50" orgx="50"   ImageName="11RedSP.png" />
+				<Frame0 u="460" v="860" w="160" h="160" x="99" y = "457" destw="100" desth = "100" orgy="50" orgx="50"   ImageName="11RedSP.png" />
+				<Frame0 u="620" v="860" w="160" h="160" x="99" y = "457" destw="100" desth = "100" orgy="50" orgx="50"   ImageName="11RedSP.png" />
+			</Part>
+		</Flare1_0>
+		<Flare1_0 PartCount="1" ID="253">
+			<Part FrameCount = "8" Draw_SrcBlend = "true" FrameSpeed="33.3">
+				<Frame0 u="140" v="700" w="160" h="160" x="118" y = "457" destw="100" desth = "100" orgy="50" orgx="50"   ImageName="11RedSP.png" />
+				<Frame0 u="300" v="700" w="160" h="160" x="118" y = "457" destw="100" desth = "100" orgy="50" orgx="50"   ImageName="11RedSP.png" />
+				<Frame0 u="460" v="700" w="160" h="160" x="118" y = "457" destw="100" desth = "100" orgy="50" orgx="50"   ImageName="11RedSP.png" />
+				<Frame0 u="620" v="700" w="160" h="160" x="118" y = "457" destw="100" desth = "100" orgy="50" orgx="50"   ImageName="11RedSP.png" />
+				<Frame0 u="140" v="860" w="160" h="160" x="118" y = "457" destw="100" desth = "100" orgy="50" orgx="50"   ImageName="11RedSP.png" />
+				<Frame0 u="300" v="860" w="160" h="160" x="118" y = "457" destw="100" desth = "100" orgy="50" orgx="50"   ImageName="11RedSP.png" />
+				<Frame0 u="460" v="860" w="160" h="160" x="118" y = "457" destw="100" desth = "100" orgy="50" orgx="50"   ImageName="11RedSP.png" />
+				<Frame0 u="620" v="860" w="160" h="160" x="118" y = "457" destw="100" desth = "100" orgy="50" orgx="50"   ImageName="11RedSP.png" />
+			</Part>
+		</Flare1_0>
+		<Flare1_0 PartCount="1" ID="254">
+			<Part FrameCount = "8" Draw_SrcBlend = "true" FrameSpeed="33.3">
+				<Frame0 u="140" v="700" w="160" h="160" x="138" y = "457" destw="100" desth = "100" orgy="50" orgx="50"   ImageName="11RedSP.png" />
+				<Frame0 u="300" v="700" w="160" h="160" x="138" y = "457" destw="100" desth = "100" orgy="50" orgx="50"   ImageName="11RedSP.png" />
+				<Frame0 u="460" v="700" w="160" h="160" x="138" y = "457" destw="100" desth = "100" orgy="50" orgx="50"   ImageName="11RedSP.png" />
+				<Frame0 u="620" v="700" w="160" h="160" x="138" y = "457" destw="100" desth = "100" orgy="50" orgx="50"   ImageName="11RedSP.png" />
+				<Frame0 u="140" v="860" w="160" h="160" x="138" y = "457" destw="100" desth = "100" orgy="50" orgx="50"   ImageName="11RedSP.png" />
+				<Frame0 u="300" v="860" w="160" h="160" x="138" y = "457" destw="100" desth = "100" orgy="50" orgx="50"   ImageName="11RedSP.png" />
+				<Frame0 u="460" v="860" w="160" h="160" x="138" y = "457" destw="100" desth = "100" orgy="50" orgx="50"   ImageName="11RedSP.png" />
+				<Frame0 u="620" v="860" w="160" h="160" x="138" y = "457" destw="100" desth = "100" orgy="50" orgx="50"   ImageName="11RedSP.png" />
+			</Part>
+		</Flare1_0>
+		<Flare1_0 PartCount="1" ID="255">
+			<Part FrameCount = "8" Draw_SrcBlend = "true" FrameSpeed="33.3">
+				<Frame0 u="140" v="700" w="160" h="160" x="158" y = "457" destw="100" desth = "100" orgy="50" orgx="50"   ImageName="11RedSP.png" />
+				<Frame0 u="300" v="700" w="160" h="160" x="158" y = "457" destw="100" desth = "100" orgy="50" orgx="50"   ImageName="11RedSP.png" />
+				<Frame0 u="460" v="700" w="160" h="160" x="158" y = "457" destw="100" desth = "100" orgy="50" orgx="50"   ImageName="11RedSP.png" />
+				<Frame0 u="620" v="700" w="160" h="160" x="158" y = "457" destw="100" desth = "100" orgy="50" orgx="50"   ImageName="11RedSP.png" />
+				<Frame0 u="140" v="860" w="160" h="160" x="158" y = "457" destw="100" desth = "100" orgy="50" orgx="50"   ImageName="11RedSP.png" />
+				<Frame0 u="300" v="860" w="160" h="160" x="158" y = "457" destw="100" desth = "100" orgy="50" orgx="50"   ImageName="11RedSP.png" />
+				<Frame0 u="460" v="860" w="160" h="160" x="158" y = "457" destw="100" desth = "100" orgy="50" orgx="50"   ImageName="11RedSP.png" />
+				<Frame0 u="620" v="860" w="160" h="160" x="158" y = "457" destw="100" desth = "100" orgy="50" orgx="50"   ImageName="11RedSP.png" />
+			</Part>
+		</Flare1_0>
+		<Flare1_0 PartCount="1" ID="256">
+			<Part FrameCount = "8" Draw_SrcBlend = "true" FrameSpeed="33.3">
+				<Frame0 u="140" v="700" w="160" h="160" x="180" y = "457" destw="100" desth = "100" orgy="50" orgx="50"   ImageName="11RedSP.png" />
+				<Frame0 u="300" v="700" w="160" h="160" x="180" y = "457" destw="100" desth = "100" orgy="50" orgx="50"   ImageName="11RedSP.png" />
+				<Frame0 u="460" v="700" w="160" h="160" x="180" y = "457" destw="100" desth = "100" orgy="50" orgx="50"   ImageName="11RedSP.png" />
+				<Frame0 u="620" v="700" w="160" h="160" x="180" y = "457" destw="100" desth = "100" orgy="50" orgx="50"   ImageName="11RedSP.png" />
+				<Frame0 u="140" v="860" w="160" h="160" x="180" y = "457" destw="100" desth = "100" orgy="50" orgx="50"   ImageName="11RedSP.png" />
+				<Frame0 u="300" v="860" w="160" h="160" x="180" y = "457" destw="100" desth = "100" orgy="50" orgx="50"   ImageName="11RedSP.png" />
+				<Frame0 u="460" v="860" w="160" h="160" x="180" y = "457" destw="100" desth = "100" orgy="50" orgx="50"   ImageName="11RedSP.png" />
+				<Frame0 u="620" v="860" w="160" h="160" x="180" y = "457" destw="100" desth = "100" orgy="50" orgx="50"   ImageName="11RedSP.png" />
+			</Part>
+		</Flare1_0>
+		<Flare1_0 PartCount="1" ID="257">
+			<Part FrameCount = "8" Draw_SrcBlend = "true" FrameSpeed="33.3">
+				<Frame0 u="140" v="700" w="160" h="160" x="199" y = "457" destw="100" desth = "100" orgy="50" orgx="50"   ImageName="11RedSP.png" />
+				<Frame0 u="300" v="700" w="160" h="160" x="199" y = "457" destw="100" desth = "100" orgy="50" orgx="50"   ImageName="11RedSP.png" />
+				<Frame0 u="460" v="700" w="160" h="160" x="199" y = "457" destw="100" desth = "100" orgy="50" orgx="50"   ImageName="11RedSP.png" />
+				<Frame0 u="620" v="700" w="160" h="160" x="199" y = "457" destw="100" desth = "100" orgy="50" orgx="50"   ImageName="11RedSP.png" />
+				<Frame0 u="140" v="860" w="160" h="160" x="199" y = "457" destw="100" desth = "100" orgy="50" orgx="50"   ImageName="11RedSP.png" />
+				<Frame0 u="300" v="860" w="160" h="160" x="199" y = "457" destw="100" desth = "100" orgy="50" orgx="50"   ImageName="11RedSP.png" />
+				<Frame0 u="460" v="860" w="160" h="160" x="199" y = "457" destw="100" desth = "100" orgy="50" orgx="50"   ImageName="11RedSP.png" />
+				<Frame0 u="620" v="860" w="160" h="160" x="199" y = "457" destw="100" desth = "100" orgy="50" orgx="50"   ImageName="11RedSP.png" />
+			</Part>
+		</Flare1_0>			
+		
+		<ChannelActive1 PartCount="1" ID="200">
+			<Part0 FrameCount="1" Draw_SrcBlend="true">
+				<Frame0  u="0" v="640" h="379" w="63" x="28" y="221" destw="39" desth="237" ImageName="11RedSP.png" />
+			</Part0>
+		</ChannelActive1>
+		<ChannelActive1 PartCount="1" ID="201">
+			<Part0 FrameCount="1" Draw_SrcBlend="true">
+				<Frame0  u="63" v="640" h="379" w="36" x="67" y="221" destw="24" desth="237" ImageName="11RedSP.png" />
+			</Part0>
+		</ChannelActive1>
+		<ChannelActive1 PartCount="1" ID="202">
+			<Part0 FrameCount="1" Draw_SrcBlend="true">
+				<Frame0  u="99" v="640" h="379" w="27" x="90" y="221" destw="17" desth="237" ImageName="11RedSP.png" />
+			</Part0>
+		</ChannelActive1>		
+		<ChannelActive1 PartCount="1" ID="203">
+			<Part0 FrameCount="1" Draw_SrcBlend="true">
+				<Frame0  u="63" v="640" h="379" w="36" x="107" y="221" destw="24" desth="237" ImageName="11RedSP.png" />
+			</Part0>
+		</ChannelActive1>
+		<ChannelActive1 PartCount="1" ID="204">
+			<Part0 FrameCount="1" Draw_SrcBlend="true">
+				<Frame0  u="99" v="640" h="379" w="27" x="130" y="221" destw="17" desth="237" ImageName="11RedSP.png" />
+			</Part0>
+		</ChannelActive1>					
+		<ChannelActive1 PartCount="1" ID="205">
+			<Part0 FrameCount="1" Draw_SrcBlend="true">
+				<Frame0  u="63" v="640" h="379" w="36" x="147" y="221" destw="24" desth="237" ImageName="11RedSP.png" />
+			</Part0>
+		</ChannelActive1>
+		<ChannelActive1 PartCount="1" ID="206">
+			<Part0 FrameCount="1" Draw_SrcBlend="true">
+				<Frame0  u="99" v="640" h="379" w="27" x="170" y="221" destw="17" desth="237" ImageName="11RedSP.png" />
+			</Part0>
+		</ChannelActive1>		
+		<ChannelActive1 PartCount="1" ID="207">
+			<Part0 FrameCount="1" Draw_SrcBlend="true">
+				<Frame0  u="63" v="640" h="379" w="36" x="187" y="221" destw="24" desth="237" ImageName="11RedSP.png" />
+			</Part0>
+		</ChannelActive1>
+		<CheckBar ID="8" >
+			<Part0 FrameCount="1" Draw_SrcBlend="true">
+				<Frame0  u="364" v="1" w="64" h="48" x="28" y="425" destw="183" desth="32" ImageName="BASEDX.png" />
+			</Part0>
+		</CheckBar>		
+		
+		<Judgment_Cool PartCount="1" ID="4">
+			<Part0 FrameCount="25" FrameSpeed="33.3" Draw_BlendOneOne="true" KeyFraming="true">
+				<Frame0 u="0"	v="0"	w="170"	h="52" x="65-43*max(0,min(CurCombo-1,1))" y = "342" destw="106" desth="32" keyframeid="0" ImageName="BASEDX.png" />
+				<Frame0 u="0"	v="0"	w="170"	h="52" x="65-43*max(0,min(CurCombo-1,1))" y = "342" destw="106" desth="32" keyframeid="24" ImageName="BASEDX.png" />
+			</Part0>
+		</Judgment_Cool>
+		
+		<Judgment_Good PartCount="1" ID="3" >
+			<Part0 FrameCount="25" FrameSpeed="33.3" Draw_BlendOneOne="true" KeyFraming="true">
+				<Frame0 u="0"	v="55"	w="170"	h="52" x="65-43*max(0,min(CurCombo-1,1))" y = "342" destw="106" desth="32" keyframeid="0" ImageName="BASEDX.png" />
+				<Frame0 u="0"	v="55"	w="170"	h="52" x="65-43*max(0,min(CurCombo-1,1))" y = "342" destw="106" desth="32" keyframeid="24" ImageName="BASEDX.png" />
+			</Part0>
+		</Judgment_Good>
+		
+		<Judgment_Bad PartCount="1" ID="2" >
+			<Part0 FrameCount="25" FrameSpeed="33.3" Draw_BlendOneOne="true" KeyFraming="true">
+				<Frame0 u="0"	v="110"	w="170"	h="52" x="118" y = "342" destw="106" desth="32" orgx="53" keyframeid="0" ImageName="BASEDX.png" />
+				<Frame0 u="0"	v="110"	w="170"	h="52" x="118" y = "342" destw="106" desth="32" orgx="53" keyframeid="24" ImageName="BASEDX.png" />
+			</Part0>
+		</Judgment_Bad>
+		
+		<Judgment_Miss PartCount="1" ID="1" >
+			<Part0 FrameCount="25" FrameSpeed="33.3" Draw_BlendOneOne="true" KeyFraming="true">
+				<Frame0 u="0"	v="165" w="170"	h="52" x="118" y = "342" destw="106" desth="32" orgx="53" keyframeid="0" ImageName="BASEDX.png" />
+				<Frame0 u="0"	v="165" w="170"	h="52" x="118" y = "342" destw="106" desth="32" orgx="53" keyframeid="24" ImageName="BASEDX.png" />
+			</Part0>
+		</Judgment_Miss>						
+						
+		<combonumber PartCount="1" ID="400">
+			<Part0 FrameCount="25" FrameSpeed="33.3" KeyFraming="true" Draw_BlendOneOne="true">
+				<Frame0 u="CurDig*36" v="220" w="34" h="54" y="342" destw="21" desth="32" x="187-CurDigPos*21" orgy="0" orgx="0" ImageName="BASEDX.png" keyframeid="0" />				
+				<Frame0 u="CurDig*36" v="220" w="34" h="54" y="342" destw="21" desth="32" x="187-CurDigPos*21" orgy="0" orgx="0" ImageName="BASEDX.png" keyframeid="24" />				
+			</Part0>
+		</combonumber>												
+		
+		<score PartCount="1" ID="410">
+			<Part0 FrameCount="1">
+				<Frame0 u="CurDig*30+175" v="182" w="24" h="20"  destw="15" desth="13" x="174-CurDigPos*15" y="540"  ImageName="BASEDX.png" />				
+			</Part0>
+		</score>		
+
+		<CID_MAX_COMBO0 PartCount="1" ID="460">
+			<Part0 FrameCount="1">
+				<Frame0 u="CurDig*30+175" v="182" w="24" h="20"  destw="15" desth="13" x="174-CurDigPos*15" y="554"  ImageName="BASEDX.png" />				
+			</Part0>
+		</CID_MAX_COMBO0>		
+		<healthbar ID="6">
+			<Part FrameCount="1" Draw_SrcBlend = "true">
+				<Frame u="div(CurLife*100,100)*34+320"			v="499" w="32" h="24" destw="15" desth="18" x="224" y="484" ImageName="11RedSP.png"/>
+			</Part>			
+			<Part FrameCount="1" Draw_SrcBlend = "true">
+				<Frame u="mod(div(CurLife*100,10),10)*34+320"	v="499" w="32" h="24" destw="15" desth="18" x="239" y="484" ImageName="11RedSP.png"/>
+			</Part>			
+			<Part FrameCount="1" Draw_SrcBlend = "true">
+				<Frame u="mod(CurLife*100,10)*34+320"			v="499" w="32" h="24" destw="15" desth="18" x="254" y="484" ImageName="11RedSP.png"/>
+			</Part>			
+		</healthbar>		
+
+		<LongNote1 AutoGenerate="true" ID="150"></LongNote2>
+		<LongNote2 AutoGenerate="true" ID="151"></LongNote2>
+		<LongNote3 AutoGenerate="true" ID="152"></LongNote3>
+		<LongNote4 AutoGenerate="true" ID="153"></LongNote4>
+		<LongNote5 AutoGenerate="true" ID="154"></LongNote5>
+		<LongNote6 AutoGenerate="true" ID="155"></LongNote6>
+		<LongNote1 AutoGenerate="true" ID="156"></LongNote2>
+		<LongNote1 AutoGenerate="true" ID="157"></LongNote2>
+				
+	</Component>
+	<IDRange>
+		<!--
+		startid		maxcount	desc	
+		0			1			panel
+		1			1			judgement fail(MISS)
+		2			1			judgement bad
+		3			1			judgement good
+		4			1			judgement cool
+		5			1			judgement kool
+		6			1			lifebar
+		7			1			trackbar
+		8			1			checkbar
+		9			1			ComboText
+		50			50			keydown
+		100			50			note
+		150			50			longnote
+		200			50			channelactive
+		250			50			flare cool
+		300			50			flare kool
+		350			50			longflare1
+		400			10			combo number
+		410			10			score number
+		420			10			max combo number
+		!--></IDRange>
+</Skin>
